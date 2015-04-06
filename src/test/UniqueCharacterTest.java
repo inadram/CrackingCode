@@ -9,11 +9,20 @@ import static junit.framework.Assert.assertTrue;
 public class UniqueCharacterTest {
 
     @Test
-    public void test_string_have_unique_character(){
+    public void test_string_have_unique_character_with_HashSet(){
         UniqueCharacter uniqueCharacter= new UniqueCharacter();
         String uniqueCharacterString = "asdfghjkloiuytr";
-        assertTrue(uniqueCharacter.checkWithHashset(uniqueCharacterString));
+        assertTrue(uniqueCharacter.checkWithHashSet(uniqueCharacterString));
         String NotUniqueCharacterString = "asdfghajkloiuytr";
-        assertFalse(uniqueCharacter.checkWithHashset(NotUniqueCharacterString));
+        assertFalse(uniqueCharacter.checkWithHashSet(NotUniqueCharacterString));
+    }
+
+    @Test
+    public void test_string_have_unique_character_with_no_additional_dataStructure(){
+        UniqueCharacter uniqueCharacter= new UniqueCharacter();
+        String uniqueCharacterString = "asdfghjkloiuytr";
+        assertTrue(uniqueCharacter.checkWithNoAdditionalDataStructure(uniqueCharacterString));
+        String NotUniqueCharacterString = "asdfghajkloiuytr";
+        assertFalse(uniqueCharacter.checkWithNoAdditionalDataStructure(NotUniqueCharacterString));
     }
 }
