@@ -35,4 +35,16 @@ public class UniqueCharacter {
         }
         return true;
     }
+
+    public boolean checkWithAsciiTable(String charactersString) {
+        // 256 in ascii string, 2 power 21 in unicode
+        boolean[] characters = new boolean[256];
+        for(Character character:charactersString.toCharArray()){
+            if(characters[character]){
+                return false;
+            }
+            characters[character] = true;
+        }
+        return true;
+    }
 }
