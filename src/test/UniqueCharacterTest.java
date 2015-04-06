@@ -25,4 +25,13 @@ public class UniqueCharacterTest {
         String NotUniqueCharacterString = "asdfghajkloiuytr";
         assertFalse(uniqueCharacter.checkWithNoAdditionalDataStructure(NotUniqueCharacterString));
     }
+
+    @Test
+    public void test_string_have_unique_character_with_StringBuilder(){
+        UniqueCharacter uniqueCharacter= new UniqueCharacter();
+        String uniqueCharacterString = "asdfghjkloiuytr";
+        assertTrue(uniqueCharacter.checkWithStringBuilder(uniqueCharacterString));
+        String NotUniqueCharacterString = "asdfghajkloiuytr";
+        assertFalse(uniqueCharacter.checkWithStringBuilder(NotUniqueCharacterString));
+    }
 }

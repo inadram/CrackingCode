@@ -3,24 +3,35 @@ package main.dataStructures.arraysAndStrings.one;
 import java.util.HashSet;
 
 public class UniqueCharacter {
-    public boolean checkWithHashSet(String uniqueCharacterString) {
+    public boolean checkWithHashSet(String characterString) {
         HashSet<Character> verifyUniquenessHashSet =new HashSet<Character>();
-        for(Character c: uniqueCharacterString.toCharArray()){
+        for(Character c: characterString.toCharArray()){
               verifyUniquenessHashSet.add(c);
         }
-        return uniqueCharacterString.toCharArray().length == verifyUniquenessHashSet.size();
+        return characterString.toCharArray().length == verifyUniquenessHashSet.size();
     }
 
-    public boolean checkWithNoAdditionalDataStructure(String uniqueCharacterString) {
-        int initialSize= uniqueCharacterString.toCharArray().length;
-        for(Character character:uniqueCharacterString.toCharArray()){
-            String replacedString = uniqueCharacterString.replaceAll(character.toString(), "");
+    public boolean checkWithNoAdditionalDataStructure(String characterString) {
+        int initialSize= characterString.toCharArray().length;
+        for(Character character:characterString.toCharArray()){
+            String replacedString = characterString.replaceAll(character.toString(), "");
             int afterDeductionSize = replacedString.toCharArray().length;
             if(initialSize - afterDeductionSize >1){
                 return false;
             }else{
                initialSize = afterDeductionSize;
             }
+        }
+        return true;
+    }
+
+    public boolean checkWithStringBuilder(String charactersString){
+        StringBuilder stringBuilder = new StringBuilder();
+        for(Character character:charactersString.toCharArray()){
+            if(stringBuilder.indexOf(character.toString())>=0){
+                return false;
+            }
+            stringBuilder.append(character);
         }
         return true;
     }
