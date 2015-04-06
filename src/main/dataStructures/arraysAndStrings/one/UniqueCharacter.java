@@ -37,6 +37,9 @@ public class UniqueCharacter {
     }
 
     public boolean checkWithAsciiTable(String charactersString) {
+        if(charactersString.length()>256){
+            return false;
+        }
         // 256 in ascii string, 2 power 21 in unicode
         boolean[] characters = new boolean[256];
         for(Character character:charactersString.toCharArray()){
