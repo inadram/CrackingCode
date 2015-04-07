@@ -3,21 +3,21 @@ package main.dataStructures.arraysAndStrings.three;
 import java.util.Arrays;
 
 public class StringPermutation {
-    public boolean check(String permutationOne, String permutationTwo) {
-        if(permutationOne.length()!=permutationTwo.length()){
+    public boolean check(String one, String two) {
+        if(one.length()!=two.length()){
             return false;
         }
-        int lengthIndex = permutationOne.length()-1;
+        int lengthIndex = one.length()-1;
         for(int i=0;i<= lengthIndex;i++){
-            if(permutationOne.charAt(i)!=permutationTwo.charAt(lengthIndex-i)){
+            if(one.charAt(i)!=two.charAt(lengthIndex-i)){
                return false;
             }
         }
         return true;
     }
 
-    public boolean checkRevers(String permutationOne, String permutationTwo) {
-        StringBuilder stringBuilder =new StringBuilder(permutationOne);
-        return stringBuilder.reverse().toString().equals(permutationTwo);
+    public boolean checkRevers(String one, String two) {
+        StringBuilder stringBuilder =new StringBuilder(one);
+        return stringBuilder.reverse().toString().equals(two);
     }
 }
