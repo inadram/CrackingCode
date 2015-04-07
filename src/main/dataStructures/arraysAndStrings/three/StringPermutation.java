@@ -17,7 +17,7 @@ public class StringPermutation {
     }
 
     public boolean checkRevers(String one, String two) {
-        StringBuilder stringBuilder =new StringBuilder(one);
+        StringBuilder stringBuilder =new StringBuilder(one); //StringBuffer is synchronized, StringBuilder is not.
         return stringBuilder.reverse().toString().equals(two);
     }
 }
