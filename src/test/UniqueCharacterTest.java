@@ -48,4 +48,10 @@ public class UniqueCharacterTest {
         assertTrue(uniqueCharacter.checkWithAsciiTableRecursive(uniqueCharacterString));
         assertFalse(uniqueCharacter.checkWithAsciiTableRecursive(NotUniqueCharacterString));
     }
+
+    @Test
+    public void test_string_have_unique_character_with_bit(){
+        assertTrue(uniqueCharacter.checkWithBit(uniqueCharacterString));
+        assertFalse(uniqueCharacter.checkWithBit(NotUniqueCharacterString));
+    }
 }

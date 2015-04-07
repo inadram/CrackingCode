@@ -71,4 +71,17 @@ public class UniqueCharacter {
         return charRecursive(characters,allCharacters,++index);
     }
 
+    public boolean checkWithBit(String characterString) {
+        int checker =0;
+        for (char character:characterString.toCharArray()){
+            // reduce the 97 from char to have less number of bits
+            character -= 'a';
+            if((checker  & (1<<character)) > 0){
+               return false;
+            }else{
+                checker|=1<<character;
+            }
+        }
+        return true;
+    }
 }
