@@ -54,4 +54,10 @@ public class UniqueCharacterTest {
         assertTrue(uniqueCharacter.checkWithBit(uniqueCharacterString));
         assertFalse(uniqueCharacter.checkWithBit(NotUniqueCharacterString));
     }
+
+    @Test
+    public void test_string_have_unique_character_with_sorting(){
+        assertTrue(uniqueCharacter.checkWithSorting(uniqueCharacterString));
+        assertFalse(uniqueCharacter.checkWithSorting(NotUniqueCharacterString));
+    }
 }

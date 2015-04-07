@@ -1,6 +1,10 @@
 package main.dataStructures.arraysAndStrings.one;
 
+import java.sql.Array;
+import java.text.Collator;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Locale;
 
 public class UniqueCharacter {
     public boolean checkWithHashSet(String characterString) {
@@ -83,5 +87,11 @@ public class UniqueCharacter {
             }
         }
         return true;
+    }
+
+    public boolean checkWithSorting(String characterString) {
+        char[] characters = characterString.toCharArray();
+        Arrays.sort(characters);
+        return  checkWithBit(new String(characters));
     }
 }
