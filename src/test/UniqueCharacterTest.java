@@ -17,7 +17,6 @@ public class UniqueCharacterTest {
     @BeforeClass
     public void setup() {
         uniqueCharacter= new UniqueCharacter();
-
     }
 
     @Test
@@ -42,5 +41,11 @@ public class UniqueCharacterTest {
     public void test_string_have_unique_character_with_ascii_table(){
         assertTrue(uniqueCharacter.checkWithAsciiTable(uniqueCharacterString));
         assertFalse(uniqueCharacter.checkWithAsciiTable(NotUniqueCharacterString));
+    }
+
+    @Test
+    public void test_string_have_unique_character_with_recursive(){
+        assertTrue(uniqueCharacter.checkWithAsciiTableRecursive(uniqueCharacterString));
+        assertFalse(uniqueCharacter.checkWithAsciiTableRecursive(NotUniqueCharacterString));
     }
 }
