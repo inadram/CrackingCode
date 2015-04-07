@@ -1,5 +1,7 @@
 package main.dataStructures.arraysAndStrings.three;
 
+import java.util.Arrays;
+
 public class StringPermutation {
     public boolean check(String permutationOne, String permutationTwo) {
         if(permutationOne.length()!=permutationTwo.length()){
@@ -12,5 +14,10 @@ public class StringPermutation {
             }
         }
         return true;
+    }
+
+    public boolean checkRevers(String permutationOne, String permutationTwo) {
+        StringBuilder stringBuilder =new StringBuilder(permutationOne);
+        return stringBuilder.reverse().toString().equals(permutationTwo);
     }
 }
