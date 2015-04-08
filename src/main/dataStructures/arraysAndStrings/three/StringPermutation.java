@@ -1,7 +1,5 @@
 package main.dataStructures.arraysAndStrings.three;
 
-import java.util.Arrays;
-
 public class StringPermutation {
     public boolean check(String one, String two) {
         if(one.length()!=two.length()){
