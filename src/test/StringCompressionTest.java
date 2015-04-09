@@ -38,4 +38,30 @@ public class StringCompressionTest {
         String actualString= stringCompression.compressWithString("aaaabbcc");
         assertEquals(actualString,"a4b2c2");
     }
+
+    @Test
+    public void test_compress_aaassddfgghh_with_string_return_itself_if_compressed_version_is_not_smaller()
+    {
+        StringCompression stringCompression =new StringCompression();
+        String actualString= stringCompression.compressWithString("aaassddfgghh");
+        assertEquals(actualString,"aaassddfgghh");
+    }
+
+    @Test
+    public void test_compress_aaaabbcc_stringBuilder_to_a4b2c2_with_string()
+    {
+        StringCompression stringCompression =new StringCompression();
+        String actualString= stringCompression.compressWithStringBuilder("aaaabbcc");
+        assertEquals(actualString,"a4b2c2");
+    }
+
+    @Test
+    public void test_compress_aaassddfgghh_with_stringBuilder_return_itself_if_compressed_version_is_not_smaller()
+    {
+        StringCompression stringCompression =new StringCompression();
+        String actualString= stringCompression.compressWithStringBuilder("aaassddfgghh");
+        assertEquals(actualString,"aaassddfgghh");
+    }
+
+
 }

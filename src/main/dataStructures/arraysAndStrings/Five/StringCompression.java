@@ -21,6 +21,9 @@ public class StringCompression {
     }
 
     public String compressWithString(String someString) {
+        if(someString.length()<=countCompressedCharacters(someString)){
+            return someString;
+        }
         String compressedString ="";
         char existing=someString.charAt(0);
         int count =0;
@@ -34,5 +37,44 @@ public class StringCompression {
             }
         }
         return compressedString+existing+""+count;
+    }
+
+    private int countCompressedCharacters(String someString) {
+        if(someString ==null || someString.isEmpty()){
+            return 0;
+        }
+        int length =0;
+        int count=1;
+        char exist = someString.charAt(0);
+        for(char character:someString.toCharArray()){
+            if(exist == character){
+                count++;
+            }
+            else {
+                exist=character;
+                length+= 1+String.valueOf(count).length();
+            }
+        }
+        length+= 1+String.valueOf(count).length();
+        return length;
+    }
+
+    public String compressWithStringBuilder(String someString) {
+        if(someString.length()<=countCompressedCharacters(someString)){
+            return someString;
+        }
+        StringBuilder compressedString = new StringBuilder();
+        char existing=someString.charAt(0);
+        int count =0;
+        for(char character:someString.toCharArray()){
+            if(existing == character){
+                count++;
+            }else{
+                compressedString.append(existing).append(count);
+                count=1;
+                existing =character;
+            }
+        }
+        return compressedString.append(existing).append(count).toString();
     }
 }
