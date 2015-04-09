@@ -1,5 +1,6 @@
 package main.dataStructures.arraysAndStrings.Five;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -76,5 +77,38 @@ public class StringCompression {
             }
         }
         return compressedString.append(existing).append(count).toString();
+    }
+
+    public String compressWithCharArray(String someString) {
+        int size = countCompressedCharacters(someString);
+        if(someString.length()<= size){
+            return someString;
+        }
+        char[] compressedArray=new char[size];
+        char existing =someString.charAt(0);
+        int count =0;
+        int index =0;
+        for(char character:someString.toCharArray()){
+            if(existing == character){
+                count++;
+            }else{
+                index = setChar(compressedArray,existing,index,count);
+                count=1;
+                existing =character;
+            }
+        }
+        setChar(compressedArray,existing,index,count);
+        return String.valueOf(compressedArray);
+    }
+
+    private int setChar(char[] compressedArray, char existing, int index, int count) {
+       compressedArray[index]=existing;
+        index++;
+        char[] cnt = String.valueOf(count).toCharArray();
+        for(char c:cnt){
+            compressedArray[index]=c;
+            index++;
+        }
+        return index;
     }
 }

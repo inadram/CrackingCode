@@ -64,4 +64,20 @@ public class StringCompressionTest {
     }
 
 
+    @Test
+    public void test_compress_aaaabbcc_charArray_to_a4b2c2_with_string()
+    {
+        StringCompression stringCompression =new StringCompression();
+        String actualString= stringCompression.compressWithCharArray("aaaabbcc");
+        assertEquals(actualString,"a4b2c2");
+    }
+
+    @Test
+    public void test_compress_aaassddfgghh_with_charArray_return_itself_if_compressed_version_is_not_smaller()
+    {
+        StringCompression stringCompression =new StringCompression();
+        String actualString= stringCompression.compressWithCharArray("aaassddfgghh");
+        assertEquals(actualString,"aaassddfgghh");
+    }
+
 }
