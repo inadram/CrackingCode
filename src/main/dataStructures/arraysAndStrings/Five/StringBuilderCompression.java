@@ -1,23 +1,21 @@
 package main.dataStructures.arraysAndStrings.Five;
 
-public class StringCompression {
-
+public class StringBuilderCompression {
     public String compress(String someString) {
         if (lib.shouldReturnOriginalString(someString)) return someString;
 
-        String compressedString ="";
+        StringBuilder compressedString = new StringBuilder();
         char existing=someString.charAt(0);
         int count =0;
         for(char character:someString.toCharArray()){
             if(existing == character){
-               count++;
+                count++;
             }else{
-                compressedString+=existing+""+count;
+                compressedString.append(existing).append(count);
                 count=1;
                 existing =character;
             }
         }
-        return compressedString+existing+""+count;
+        return compressedString.append(existing).append(count).toString();
     }
-
 }
