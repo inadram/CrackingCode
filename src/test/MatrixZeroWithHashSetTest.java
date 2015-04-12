@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MatrixZeroTest {
+public class MatrixZeroWithHashSetTest {
 
     int[][] expectedMatrix;
     int[][] matrix;
@@ -64,10 +64,12 @@ public class MatrixZeroTest {
         expectedMatrix[3][3]=16;
 
     }
+
     @Test
-    public void test_matrix_should_update_columns_and_rows_that_have_zero_value(){
-        MatrixZero matrixZero=new MatrixZero();
-        int[][] actualMatrix=matrixZero.check(matrix);
+    public void test_matrix_should_update_columns_and_rows_that_have_zero_value_with_HashSet(){
+
+        MatrixZeroWithHashSet matrixZeroWithHashSet=new MatrixZeroWithHashSet();
+        int[][] actualMatrix=matrixZeroWithHashSet.check(matrix);
         Assert.assertArrayEquals(actualMatrix,expectedMatrix);
 
     }
