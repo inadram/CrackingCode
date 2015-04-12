@@ -1,7 +1,5 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Seven.MatrixZero;
-import main.dataStructures.arraysAndStrings.Seven.MatrixZeroWithArray;
 import main.dataStructures.arraysAndStrings.Seven.MatrixZeroWithHashSet;
 import org.junit.Assert;
 import org.junit.Before;
