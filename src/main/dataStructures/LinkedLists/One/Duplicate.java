@@ -21,6 +21,7 @@ public class Duplicate {
     }
 
     public void removeDuplicateInPlace(LinkedListNode linkedListNode) {
+        if(linkedListNode==null) return;
         LinkedListNode current = linkedListNode;
         LinkedListNode next = linkedListNode;
         while (current.next != null) {

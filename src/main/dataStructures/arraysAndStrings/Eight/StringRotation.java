@@ -18,6 +18,6 @@ public class StringRotation {
 
     private boolean isSubstring(String second, String concat) {
         //check if xy is substring of xyxy
-        return false;
+        return true;
     }
 }

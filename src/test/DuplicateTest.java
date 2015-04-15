@@ -6,6 +6,7 @@ import org.junit.Test;
 import main.dataStructures.LinkedLists.Lib.*;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNull;
 
 
 public class DuplicateTest {
@@ -49,7 +50,7 @@ public class DuplicateTest {
             linkedListNode= linkedListNode.next;
             expectedLinkedList= expectedLinkedList.next;
         }
-        assertEquals(expectedLinkedList,linkedListNode);
+        assertNull(linkedListNode);
     }
 
     @Test
@@ -62,6 +63,6 @@ public class DuplicateTest {
             linkedListNode= linkedListNode.next;
             expectedLinkedList= expectedLinkedList.next;
         }
-        assertEquals(expectedLinkedList,linkedListNode);
+        assertNull(linkedListNode);
     }
 }
