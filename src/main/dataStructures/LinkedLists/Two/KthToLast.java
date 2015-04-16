@@ -1,10 +1,11 @@
 package main.dataStructures.LinkedLists.Two;
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
+import main.dataStructures.LinkedLists.Two.Lib.Kth;
 
 public class KthToLast {
     public int get(LinkedListNode linkedListNode, int kthToLastElement) {
-        int kthElement = getKth(linkedListNode, kthToLastElement);
+        int kthElement = Kth.get(linkedListNode, kthToLastElement);
         return getKthValue(linkedListNode, kthElement);
     }
 
@@ -18,16 +19,5 @@ public class KthToLast {
         return -1;
     }
 
-    private int getKth(LinkedListNode linkedListNode, int kthToLast) {
-        return getSize(linkedListNode)-kthToLast;
-    }
 
-    private int getSize(LinkedListNode linkedListNode) {
-        int size = 0;
-        while (linkedListNode != null) {
-            size++;
-            linkedListNode = linkedListNode.next;
-        }
-        return size;
-    }
 }
