@@ -7,10 +7,6 @@ public class LinkedListNode implements Cloneable {
         this.data=data;
     }
 
-    public LinkedListNode(LinkedListNode linkedListNode) {
-        this(linkedListNode.data);
-    }
-
     public void appendToTail(int data){
         LinkedListNode linkedListNode = this;
         while (linkedListNode.next!=null){
@@ -19,12 +15,4 @@ public class LinkedListNode implements Cloneable {
         linkedListNode.next = new LinkedListNode(data);
     }
 
-    public Object clone() {
-        try {
-            return super.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }
