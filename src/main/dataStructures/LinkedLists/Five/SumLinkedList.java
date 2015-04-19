@@ -1,37 +1,49 @@
 package main.dataStructures.LinkedLists.Five;
 
-import main.dataStructures.LinkedLists.Five.Lib.Sanity;
+import main.dataStructures.LinkedLists.Five.Lib.SumWrapper;
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
+import main.dataStructures.LinkedLists.Lib.Size;
 
 public class SumLinkedList {
 
+
     public LinkedListNode execute(LinkedListNode first, LinkedListNode second) {
-        int sum = Sanity.sum(first, second, 0);
-        int passToNext = sum/10;
-        int mod =sum % 10;
-        return executeSum(first.next, second.next,new LinkedListNode(mod),passToNext);
+
+        int firstSize = Size.get(first);
+        int secondSize = Size.get(second);
+        int differentSize = Math.abs(firstSize - secondSize);
+        if(firstSize>secondSize){
+           second= addPadding(second, differentSize);
+        }else if (secondSize>firstSize){
+           first= addPadding(first, differentSize);
+        }
+        SumWrapper sumWrapper = executeSum(first, second);
+        return sumWrapper.setPassToNextIfExist();
     }
 
-    private LinkedListNode executeSum(LinkedListNode first, LinkedListNode second, LinkedListNode sumNode, int passToNext) {
-        if (first == null && second == null) {
-            if(passToNext>0){
-                sumNode.appendToTail(passToNext);
-            }
-            return sumNode;
+    private LinkedListNode addPadding(LinkedListNode node, int differentSize) {
+        LinkedListNode paddedNode = new LinkedListNode(0);
+        for(int i =1;i<differentSize;i++){
+           paddedNode.appendToTail(0);
         }
-        int sum = Sanity.sum(first, second, passToNext);
-        passToNext = sum/10;
-        int mod =sum % 10;
-        sumNode.appendToTail(mod);
-
-        if (first != null) {
-            first = first.next;
-        }
-        if (second != null) {
-            second = second.next;
-        }
-        return executeSum(first, second, sumNode, passToNext);
+         while (node!=null){
+             paddedNode.appendToTail(node.data);
+             node = node.next;
+         }
+        return paddedNode;
 
     }
+
+    private SumWrapper executeSum(LinkedListNode first, LinkedListNode second) {
+        if (first == null) {
+            return new SumWrapper();
+        }
+        SumWrapper sumWrapper = executeSum(first.next, second.next);
+        sumWrapper.set(first,second);
+        return sumWrapper;
+    }
+
 
 }
+
+

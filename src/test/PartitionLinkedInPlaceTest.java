@@ -22,9 +22,9 @@ public class PartitionLinkedInPlaceTest {
         linkedListNode.appendToTail(103);
         linkedListNode.appendToTail(105);
 
-        expectedLinkedListNode=new LinkedListNode(103);
+        expectedLinkedListNode=new LinkedListNode(101);
         expectedLinkedListNode.appendToTail(102);
-        expectedLinkedListNode.appendToTail(101);
+        expectedLinkedListNode.appendToTail(103);
         expectedLinkedListNode.appendToTail(104);
         expectedLinkedListNode.appendToTail(106);
         expectedLinkedListNode.appendToTail(105);

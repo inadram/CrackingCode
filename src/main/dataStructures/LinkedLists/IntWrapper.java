@@ -1,4 +1,4 @@
-package main.dataStructures.LinkedLists.Two.Lib;
+package main.dataStructures.LinkedLists;
 
 public class IntWrapper {
     int id =0;
