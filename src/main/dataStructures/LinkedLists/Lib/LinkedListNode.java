@@ -1,6 +1,6 @@
 package main.dataStructures.LinkedLists.Lib;
 
-public class LinkedListNode implements Cloneable {
+public class LinkedListNode  {
     public LinkedListNode next;
     public int data;
     public LinkedListNode(int data){
