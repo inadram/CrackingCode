@@ -1,8 +1,6 @@
 package test;
 
 import main.dataStructures.LinkedLists.Five.SumLinkedList;
-import main.dataStructures.LinkedLists.Five.SumReversLinkedList;
-import main.dataStructures.LinkedLists.IntWrapper;
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 import org.junit.Test;
 

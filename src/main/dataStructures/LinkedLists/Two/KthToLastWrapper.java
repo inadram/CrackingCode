@@ -1,7 +1,7 @@
 package main.dataStructures.LinkedLists.Two;
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
-import main.dataStructures.LinkedLists.IntWrapper;
+import main.dataStructures.LinkedLists.Lib.IntWrapper;
 
 public class KthToLastWrapper {
     public int get(LinkedListNode linkedListNode, int kthToLast) {
