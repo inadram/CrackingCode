@@ -3,6 +3,8 @@ package main.dataStructures.LinkedLists.Seven;
 import main.dataStructures.LinkedLists.Lib.DoublyLinkedList;
 import main.dataStructures.LinkedLists.Lib.Size;
 
+import java.util.Stack;
+
 public class PalindromeIteratively {
     public boolean check(DoublyLinkedList node) {
         int size = Size.get(node);
@@ -17,6 +19,30 @@ public class PalindromeIteratively {
             }
             node = node.next;
             prevNode = prevNode.prev;
+        }
+        return true;
+    }
+
+    public boolean checkWithStack(DoublyLinkedList node) {
+        Stack<Integer> firstHalf = new Stack<Integer>();
+        DoublyLinkedList fast= node;
+        DoublyLinkedList slow= node;
+        boolean isOdd =false;
+        while (fast!=null&&fast.next!=null){
+           firstHalf.push(slow.data);
+            fast = fast.next.next;
+            slow = slow.next;
+            isOdd = !isOdd;
+       }
+        if(isOdd){
+            slow = slow.next;
+        }
+        while (!firstHalf.empty()){
+            if(slow.data!=firstHalf.peek()){
+                return false;
+            }
+            firstHalf.pop();
+            slow = slow.next;
         }
         return true;
     }
