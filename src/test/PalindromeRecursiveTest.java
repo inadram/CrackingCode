@@ -2,6 +2,7 @@ package test;
 
 import main.dataStructures.LinkedLists.Lib.DoublyLinkedList;
 import main.dataStructures.LinkedLists.Lib.IntWrapper;
+import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 import main.dataStructures.LinkedLists.Seven.PalindromeIteratively;
 import main.dataStructures.LinkedLists.Seven.PalindromeRecursive;
 import org.testng.annotations.Test;
@@ -54,6 +55,50 @@ public class PalindromeRecursiveTest {
         palindromeLinkedList.appendToTail(2);
         palindromeLinkedList.appendToTail(1);
         assertFalse(palindrome.check(palindromeLinkedList, palindromeLinkedList, palindromeLinkedList, new IntWrapper()));
+    }
+
+    @Test
+    public void test_odd_linkedList_is_palindrome_Recursive_with_length(){
+        PalindromeRecursive palindrome = new PalindromeRecursive();
+
+        LinkedListNode palindromeLinkedList=new LinkedListNode(1);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(4);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(1);
+        assertTrue(palindrome.checkWithLength(palindromeLinkedList));
+    }
+
+    @Test
+    public void test_even_linkedList_is_palindrome_Recursive_with_length(){
+        PalindromeRecursive palindrome = new PalindromeRecursive();
+
+        LinkedListNode palindromeLinkedList=new LinkedListNode(1);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(4);
+        palindromeLinkedList.appendToTail(4);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(1);
+        assertTrue(palindrome.checkWithLength(palindromeLinkedList));
+    }
+
+    @Test
+    public void test_linkedList_is_not_palindrome_Recursive_with_length(){
+        PalindromeRecursive palindrome = new PalindromeRecursive();
+
+        LinkedListNode palindromeLinkedList=new LinkedListNode(1);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(4);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(3);
+        palindromeLinkedList.appendToTail(2);
+        palindromeLinkedList.appendToTail(1);
+        assertFalse(palindrome.checkWithLength(palindromeLinkedList));
     }
 
 }
