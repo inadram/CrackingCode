@@ -4,6 +4,7 @@ import main.dataStructures.StacksAndQueues.One.ArrayToStack;
 import org.junit.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 public class ArrayToStackTest {
 
@@ -28,7 +29,10 @@ public class ArrayToStackTest {
         arrayToStack.push(3);
         arrayToStack.push(4);
 
-        assertEquals(4,arrayToStack.pop());
-        assertEquals(3,arrayToStack.pop());
+        assertEquals(4, arrayToStack.pop());
+        assertEquals(3, arrayToStack.pop());
+        assertEquals(2, arrayToStack.pop());
+        assertEquals(1, arrayToStack.pop());
+        assertTrue(arrayToStack.isEmpty());
     }
 }

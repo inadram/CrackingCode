@@ -29,4 +29,8 @@ public class ArrayToStack {
     public int peek() {
         return  array[getColumn()][getRow()];
     }
+
+    public boolean isEmpty() {
+        return position==-1;
+    }
 }
