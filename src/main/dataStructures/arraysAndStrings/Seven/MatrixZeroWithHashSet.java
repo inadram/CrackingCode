@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Seven;
+package main.dataStructures.ArraysAndStrings.Seven;
 
 import java.util.HashSet;
 

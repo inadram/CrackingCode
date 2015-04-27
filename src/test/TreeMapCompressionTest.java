@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Five.TreeMapCompression;
+import main.dataStructures.ArraysAndStrings.Five.TreeMapCompression;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

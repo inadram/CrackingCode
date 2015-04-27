@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Four;
+package main.dataStructures.ArraysAndStrings.Four;
 
 public class StringSpace {
     public char[] replaceWith20Percent(char[] someString) {

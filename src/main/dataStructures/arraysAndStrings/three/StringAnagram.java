@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.three;
+package main.dataStructures.ArraysAndStrings.three;
 
 import java.util.Arrays;
 

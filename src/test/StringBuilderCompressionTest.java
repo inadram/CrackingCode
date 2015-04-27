@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Five.StringBuilderCompression;
+import main.dataStructures.ArraysAndStrings.Five.StringBuilderCompression;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

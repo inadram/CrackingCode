@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.three.StringPermutation;
+import main.dataStructures.ArraysAndStrings.three.StringPermutation;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

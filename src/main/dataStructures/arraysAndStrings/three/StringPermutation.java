@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.three;
+package main.dataStructures.ArraysAndStrings.three;
 
 public class StringPermutation {
     public boolean check(String one, String two) {

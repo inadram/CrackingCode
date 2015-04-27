@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Six;
+package main.dataStructures.ArraysAndStrings.Six;
 
 public class Rotate {
 

@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.three.StringAnagram;
+import main.dataStructures.ArraysAndStrings.three.StringAnagram;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

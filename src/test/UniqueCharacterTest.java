@@ -1,7 +1,6 @@
 package test;
 
-import junit.extensions.TestSetup;
-import main.dataStructures.arraysAndStrings.one.UniqueCharacter;
+import main.dataStructures.ArraysAndStrings.one.UniqueCharacter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Five;
+package main.dataStructures.ArraysAndStrings.Five;
 
 import java.util.Map;
 import java.util.SortedMap;

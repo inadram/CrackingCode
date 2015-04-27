@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Five;
+package main.dataStructures.ArraysAndStrings.Five;
 
 public class StringBuilderCompression {
     public String compress(String someString) {

@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Seven.MatrixZero;
+import main.dataStructures.ArraysAndStrings.Seven.MatrixZero;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

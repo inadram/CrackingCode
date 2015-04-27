@@ -1,10 +1,7 @@
-package main.dataStructures.arraysAndStrings.one;
+package main.dataStructures.ArraysAndStrings.one;
 
-import java.sql.Array;
-import java.text.Collator;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.Locale;
 
 public class UniqueCharacter {
     public boolean checkWithHashSet(String characterString) {

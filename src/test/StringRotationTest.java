@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Eight.StringRotation;
+import main.dataStructures.ArraysAndStrings.Eight.StringRotation;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertTrue;

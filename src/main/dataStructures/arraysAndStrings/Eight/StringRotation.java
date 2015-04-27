@@ -1,4 +1,4 @@
-package main.dataStructures.arraysAndStrings.Eight;
+package main.dataStructures.ArraysAndStrings.Eight;
 
 public class StringRotation {
     public boolean check(String first, String second) {

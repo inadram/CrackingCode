@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Seven.MatrixZeroWithHashSet;
+import main.dataStructures.ArraysAndStrings.Seven.MatrixZeroWithHashSet;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

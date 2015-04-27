@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Four.StringSpace;
+import main.dataStructures.ArraysAndStrings.Four.StringSpace;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

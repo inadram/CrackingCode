@@ -1,10 +1,8 @@
 package test;
 
-import main.dataStructures.arraysAndStrings.Six.Rotate;
+import main.dataStructures.ArraysAndStrings.Six.Rotate;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.HashSet;
 
 public class RotateTest {
 
