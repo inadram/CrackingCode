@@ -12,10 +12,10 @@ public class SetOfStacks {
     }
 
     public void push(int i) {
-        if (setOfStacks.isEmpty() || isStackFull(setOfStacks.peek())) {
+        if (setOfStacks.isEmpty() || isStackFull(getLastStack(setOfStacks))) {
             setOfStacks.push(new Stack<Integer>());
         }
-        setOfStacks.peek().push(i);
+        getLastStack(setOfStacks).push(i);
     }
 
     public int peek() {
@@ -23,13 +23,13 @@ public class SetOfStacks {
     }
 
     public int pop() {
+        if (getLastStack(setOfStacks).isEmpty()) {
+            setOfStacks.pop();
+        }
         return getLastStack(setOfStacks).pop();
     }
 
     private Stack<Integer> getLastStack(Stack<Stack<Integer>> setOfStacks) {
-        if (setOfStacks.peek().isEmpty()) {
-            setOfStacks.pop();
-        }
         return setOfStacks.peek();
     }
 
