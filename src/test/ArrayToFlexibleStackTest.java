@@ -4,7 +4,10 @@ import junit.framework.TestCase;
 import main.dataStructures.StacksAndQueues.One.ArrayToFlexibleStack;
 import org.testng.annotations.Test;
 
-public class ArrayToFlexibleStackTest extends TestCase {
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
+
+public class ArrayToFlexibleStackTest {
 
 
     @Test
