@@ -30,6 +30,37 @@ public class SetOfStacksWithArrayList {
         return getLastStack(setOfStacks).pop();
     }
 
+    public int popAt(int index) {
+        if (getLastStack(setOfStacks).isEmpty()) {
+            setOfStacks.remove(setOfStacks.size() - 1);
+        }
+        int popValue = setOfStacks.get(index - 1).pop();
+        if (setOfStacks.size() > index) {
+            int top = getTopOfPreviousStack(index);
+            pushToBottomOfCurrentStack(top, index);
+        }
+        return popValue;
+    }
+
+    private void pushToBottomOfCurrentStack(int top, int index) {
+        Stack<Integer> temp = new Stack<Integer>();
+
+        Stack<Integer> currentStack = setOfStacks.get(index - 1);
+        while (!currentStack.isEmpty()) {
+            temp.push(currentStack.pop());
+        }
+        temp.push(top);
+        while (!temp.isEmpty()) {
+            currentStack.push(temp.pop());
+        }
+        setOfStacks.set(index - 1, currentStack);
+    }
+
+    private int getTopOfPreviousStack(int index) {
+        return setOfStacks.get(index - 2).pop();
+    }
+
+
     private Stack<Integer> getLastStack(ArrayList<Stack<Integer>> setOfStacks) {
         return setOfStacks.get(setOfStacks.size()-1);
     }

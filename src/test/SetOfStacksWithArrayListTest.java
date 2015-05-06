@@ -1,7 +1,5 @@
 package test;
 
-import junit.framework.TestCase;
-import main.dataStructures.StacksAndQueues.Three.SetOfStacks;
 import main.dataStructures.StacksAndQueues.Three.SetOfStacksWithArrayList;
 import org.testng.annotations.Test;
 
@@ -32,11 +30,28 @@ public class SetOfStacksWithArrayListTest{
         setOfStacks.push(13);
         setOfStacks.push(14);
 
-        assertEquals(14,setOfStacks.pop());
-        assertEquals(13,setOfStacks.pop());
-        assertEquals(12,setOfStacks.pop());
-        assertEquals(11,setOfStacks.pop());
+        assertEquals(14, setOfStacks.pop());
+        assertEquals(13, setOfStacks.pop());
+        assertEquals(12, setOfStacks.pop());
+        assertEquals(11, setOfStacks.pop());
         assertEquals(10,setOfStacks.pop());
+    }
+
+    @Test
+    public void test_popAt_from_setOfStacks_get_value_from_specified_stack() {
+
+        SetOfStacksWithArrayList setOfStacks = new SetOfStacksWithArrayList(3);
+        setOfStacks.push(10);
+        setOfStacks.push(11);
+        setOfStacks.push(12);
+        setOfStacks.push(13);
+        setOfStacks.push(14);
+        setOfStacks.push(15);
+
+        assertEquals(15, setOfStacks.popAt(2));
+        assertEquals(14, setOfStacks.popAt(2));
+        assertEquals(13, setOfStacks.popAt(2));
+        assertEquals(12, setOfStacks.popAt(1));
     }
 
 }

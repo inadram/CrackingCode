@@ -35,4 +35,27 @@ public class ArrayToStackTest {
         assertEquals(1, arrayToStack.pop());
         assertTrue(arrayToStack.isEmpty());
     }
+
+    @Test
+    public void single_array_to_popAt_from_second_stack() {
+
+        ArrayToStack arrayToStack = new ArrayToStack();
+        arrayToStack.push(1);
+        arrayToStack.push(2);
+        arrayToStack.push(3);
+        arrayToStack.push(4);
+        arrayToStack.push(5);
+        arrayToStack.push(6);
+        arrayToStack.push(7);
+        arrayToStack.push(8);
+        arrayToStack.push(9);
+        arrayToStack.push(10);
+        arrayToStack.push(11);
+        arrayToStack.push(12);
+
+        assertEquals(10, arrayToStack.popAt(2));
+        assertEquals(12, arrayToStack.peek());
+        assertEquals(11, arrayToStack.popAt(2));
+        assertEquals(12, arrayToStack.popAt(2));
+    }
 }
