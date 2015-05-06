@@ -47,11 +47,19 @@ public class SetOfStacksWithArrayListTest{
         setOfStacks.push(13);
         setOfStacks.push(14);
         setOfStacks.push(15);
+        setOfStacks.push(16);
+        setOfStacks.push(17);
+        setOfStacks.push(18);
 
-        assertEquals(15, setOfStacks.popAt(2));
-        assertEquals(14, setOfStacks.popAt(2));
-        assertEquals(13, setOfStacks.popAt(2));
-        assertEquals(12, setOfStacks.popAt(1));
+        assertEquals(12, setOfStacks.popAt(0));
+        assertEquals(13, setOfStacks.popAt(0));
+        assertEquals(14, setOfStacks.popAt(0));
+        assertEquals(15, setOfStacks.popAt(0));
+        assertEquals(16, setOfStacks.popAt(0));
+        assertEquals(17, setOfStacks.popAt(0));
+        assertEquals(18, setOfStacks.popAt(0));
+        assertEquals(11, setOfStacks.popAt(0));
+        assertEquals(10, setOfStacks.popAt(0));
     }
 
 }

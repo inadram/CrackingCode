@@ -34,30 +34,30 @@ public class SetOfStacksWithArrayList {
         if (getLastStack(setOfStacks).isEmpty()) {
             setOfStacks.remove(setOfStacks.size() - 1);
         }
-        int popValue = setOfStacks.get(index - 1).pop();
-        if (setOfStacks.size() > index) {
-            int top = getTopOfPreviousStack(index);
-            pushToBottomOfCurrentStack(top, index);
+        int popValue = setOfStacks.get(index).pop();
+        while (setOfStacks.size()-1 > index) {
+            int bottom = getBottom(index+1);
+            setOfStacks.get(index).push(bottom);
+            index++;
         }
         return popValue;
     }
 
-    private void pushToBottomOfCurrentStack(int top, int index) {
-        Stack<Integer> temp = new Stack<Integer>();
-
-        Stack<Integer> currentStack = setOfStacks.get(index - 1);
-        while (!currentStack.isEmpty()) {
-            temp.push(currentStack.pop());
-        }
-        temp.push(top);
-        while (!temp.isEmpty()) {
-            currentStack.push(temp.pop());
-        }
-        setOfStacks.set(index - 1, currentStack);
+    private int getBottom(int index) {
+        Stack<Integer> stack = setOfStacks.get(index);
+        Stack<Integer> temp =reversStack(stack);
+        int bottom =temp.pop();
+        setOfStacks.set(index,reversStack(temp));
+        return bottom;
     }
 
-    private int getTopOfPreviousStack(int index) {
-        return setOfStacks.get(index - 2).pop();
+    private Stack<Integer> reversStack(Stack<Integer> stack) {
+        Stack<Integer> temp = new Stack<Integer>();
+
+        while (!stack.isEmpty()){
+            temp.push(stack.pop());
+        }
+        return temp;
     }
 
 
