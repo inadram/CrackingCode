@@ -2,16 +2,15 @@ package main.dataStructures.StacksAndQueues.Three;
 
 
 import main.dataStructures.StacksAndQueues.Lib.DoublyStack;
-import main.dataStructures.StacksAndQueues.Lib.Stack;
 
 import java.util.ArrayList;
 
-public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList {
+public class SetOfCustomisedStacksRecursivelyWithArrayList extends SetOfStacksWithArrayList {
 
     ArrayList<DoublyStack> setOfStacks = new ArrayList<DoublyStack>();
     private int limit;
 
-    public SetOfCustomisedStacksWithArrayList(int limit) {
+    public SetOfCustomisedStacksRecursivelyWithArrayList(int limit) {
         super(limit);
         this.limit = limit;
     }

@@ -5,11 +5,13 @@ import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 public class Stack {
     LinkedListNode head = null;
     LinkedListNode tail = null;
+    int size=0;
 
     public void push(int i) {
         head = new LinkedListNode(i);
         head.next = tail;
         tail = head;
+        size++;
 
     }
 
@@ -18,6 +20,7 @@ public class Stack {
     }
 
     public int pop() {
+        size--;
         if (head != null) {
             int data = head.data;
             head = head.next;
@@ -31,4 +34,7 @@ public class Stack {
         return head==null;
     }
 
+    public int size() {
+        return this.size++;
+    }
 }
