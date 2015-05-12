@@ -1,12 +1,11 @@
 package main.dataStructures.StacksAndQueues.Three;
 
 
-import main.dataStructures.StacksAndQueues.Lib.Stack;
-
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class SetOfStacksWithArrayList {
-    ArrayList<Stack> setOfStacks = new ArrayList<Stack>();
+    ArrayList<Stack<Integer>> setOfStacks = new ArrayList<Stack<Integer>>();
     private int limit;
 
     public SetOfStacksWithArrayList(int limit) {
@@ -15,7 +14,7 @@ public class SetOfStacksWithArrayList {
 
     public void push(int i) {
         if (setOfStacks.isEmpty() || isStackFull(getLastStack(setOfStacks))) {
-            setOfStacks.add(new Stack());
+            setOfStacks.add(new Stack<Integer>());
         }
         getLastStack(setOfStacks).push(i);
     }
@@ -45,15 +44,15 @@ public class SetOfStacksWithArrayList {
     }
 
     private int getBottom(int index) {
-        Stack stack = setOfStacks.get(index);
-        Stack temp =reversStack(stack);
+        Stack<Integer> stack = setOfStacks.get(index);
+        Stack<Integer> temp =reversStack(stack);
         int bottom =temp.pop();
         setOfStacks.set(index,reversStack(temp));
         return bottom;
     }
 
-    private Stack reversStack(Stack stack) {
-        Stack temp = new Stack();
+    private Stack<Integer> reversStack(Stack<Integer> stack) {
+        Stack<Integer> temp = new Stack<Integer>();
 
         while (!stack.isEmpty()){
             temp.push(stack.pop());
@@ -62,11 +61,11 @@ public class SetOfStacksWithArrayList {
     }
 
 
-    Stack getLastStack(ArrayList<Stack> setOfStacks) {
+    private Stack<Integer> getLastStack(ArrayList<Stack<Integer>> setOfStacks) {
         return setOfStacks.get(setOfStacks.size()-1);
     }
 
-    boolean isStackFull(Stack stack) {
+    private boolean isStackFull(Stack stack) {
         return stack.size() >= limit;
     }
 

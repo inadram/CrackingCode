@@ -1,25 +1,34 @@
 package main.dataStructures.StacksAndQueues.Three;
 
 
-import main.dataStructures.StacksAndQueues.Lib.DoublyStack;
 import main.dataStructures.StacksAndQueues.Lib.Stack;
 
 import java.util.ArrayList;
 
-public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList {
-
-    ArrayList<DoublyStack> setOfStacks = new ArrayList<DoublyStack>();
+public class SetOfCustomisedStacksWithArrayList {
+    ArrayList<Stack> setOfStacks = new ArrayList<Stack>();
     private int limit;
 
     public SetOfCustomisedStacksWithArrayList(int limit) {
-        super(limit);
         this.limit = limit;
     }
+
     public void push(int i) {
         if (setOfStacks.isEmpty() || isStackFull(getLastStack(setOfStacks))) {
-            setOfStacks.add(new DoublyStack());
+            setOfStacks.add(new Stack());
         }
         getLastStack(setOfStacks).push(i);
+    }
+
+    public int peek() {
+        return getLastStack(setOfStacks).peek();
+    }
+
+    public int pop() {
+        if(getLastStack(setOfStacks).isEmpty()){
+            setOfStacks.remove(setOfStacks.size()-1);
+        }
+        return getLastStack(setOfStacks).pop();
     }
 
     public int popAt(int index) {
@@ -28,21 +37,40 @@ public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList
         }
         int popValue = setOfStacks.get(index).pop();
         while (setOfStacks.size()-1 > index) {
-            int bottom = getBottomWithStack(index+1);
+            int bottom = getBottom(index+1);
             setOfStacks.get(index).push(bottom);
             index++;
         }
         return popValue;
     }
 
-    DoublyStack getLastStack(ArrayList<DoublyStack> setOfStacks) {
-        return setOfStacks.get(setOfStacks.size()-1);
+    private int getBottom(int index) {
+        Stack stack = setOfStacks.get(index);
+        Stack temp =reversStack(stack);
+        int bottom =temp.pop();
+        setOfStacks.set(index,reversStack(temp));
+        return bottom;
     }
+
     private int getBottomWithStack(int index){
         return setOfStacks.get(index).popBottom();
     }
 
-    boolean isStackFull(DoublyStack stack) {
+    private Stack reversStack(Stack stack) {
+        Stack temp = new Stack();
+
+        while (!stack.isEmpty()){
+            temp.push(stack.pop());
+        }
+        return temp;
+    }
+
+
+    private Stack getLastStack(ArrayList<Stack> setOfStacks) {
+        return setOfStacks.get(setOfStacks.size()-1);
+    }
+
+    private boolean isStackFull(Stack stack) {
         return stack.size() >= limit;
     }
 

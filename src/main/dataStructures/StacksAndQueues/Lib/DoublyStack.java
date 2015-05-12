@@ -1,19 +1,16 @@
 package main.dataStructures.StacksAndQueues.Lib;
 
 import main.dataStructures.LinkedLists.Lib.DoublyLinkedList;
+import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 
 public class DoublyStack {
-    public DoublyLinkedList head = null;
+    DoublyLinkedList head = null;
     DoublyLinkedList tail = null;
-    private int size=0;
 
     public void push(int i) {
-        size++;
-        DoublyLinkedList node = new DoublyLinkedList(i);
-        node.next = head;
-        if(size==1) tail = node;
-        if(head!=null) head.prev = node;
-        head = node;
+        head = new DoublyLinkedList(i);
+        head.next = tail;
+        tail = head;
 
     }
 
@@ -22,7 +19,6 @@ public class DoublyStack {
     }
 
     public int pop() {
-        size--;
         if (head != null) {
             int data = head.data;
             head = head.next;
@@ -33,17 +29,7 @@ public class DoublyStack {
     }
 
     public boolean isEmpty(){
-        return head==null || size==0;
+        return head==null;
     }
 
-    public int size() {
-        return size;
-    }
-
-    public int popBottom() {
-        size--;
-        DoublyLinkedList bottom = tail;
-        tail = (tail.prev!=null)?tail.prev:null;
-        return bottom.data;
-    }
 }
