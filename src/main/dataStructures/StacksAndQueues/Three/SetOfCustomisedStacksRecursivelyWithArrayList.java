@@ -2,16 +2,15 @@ package main.dataStructures.StacksAndQueues.Three;
 
 
 import main.dataStructures.StacksAndQueues.Lib.DoublyStack;
-import main.dataStructures.StacksAndQueues.Lib.Stack;
 
 import java.util.ArrayList;
 
-public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList {
+public class SetOfCustomisedStacksRecursivelyWithArrayList extends SetOfStacksWithArrayList {
 
     ArrayList<DoublyStack> setOfStacks = new ArrayList<DoublyStack>();
     private int limit;
 
-    public SetOfCustomisedStacksWithArrayList(int limit) {
+    public SetOfCustomisedStacksRecursivelyWithArrayList(int limit) {
         super(limit);
         this.limit = limit;
     }
@@ -23,23 +22,25 @@ public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList
     }
 
     public int popAt(int index) {
-        if (getLastStack(setOfStacks).isEmpty()) {
-            setOfStacks.remove(setOfStacks.size() - 1);
+        return leftShift(index, true);
+    }
+
+    private int leftShift(int index, boolean removeTop) {
+        DoublyStack stack = setOfStacks.get(index);
+        int removeItem = (removeTop)? stack.pop():stack.popBottom();
+        if(stack.isEmpty()){
+            setOfStacks.remove(index);
         }
-        int popValue = setOfStacks.get(index).pop();
-        while (setOfStacks.size()-1 > index) {
-            int bottom = getBottomWithStack(index+1);
-            setOfStacks.get(index).push(bottom);
-            index++;
+        if(setOfStacks.size()-1 > index){
+            int v = leftShift(++index, false);
+            stack.push(v);
         }
-        return popValue;
+        return removeItem;
+
     }
 
     DoublyStack getLastStack(ArrayList<DoublyStack> setOfStacks) {
         return setOfStacks.get(setOfStacks.size()-1);
-    }
-    private int getBottomWithStack(int index){
-        return setOfStacks.get(index).popBottom();
     }
 
     boolean isStackFull(DoublyStack stack) {

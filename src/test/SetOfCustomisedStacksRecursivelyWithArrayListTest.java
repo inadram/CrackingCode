@@ -1,19 +1,18 @@
 package test;
 
-import main.dataStructures.StacksAndQueues.Three.SetOfCustomisedStacksWithArrayList;
+import main.dataStructures.StacksAndQueues.Three.SetOfCustomisedStacksRecursivelyWithArrayList;
 import main.dataStructures.StacksAndQueues.Three.SetOfStacksWithArrayList;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class SetOfCustomisedStacksWithArrayListTest {
-
+public class SetOfCustomisedStacksRecursivelyWithArrayListTest {
 
 
     @Test
-    public void test_popAt_from_setOfCustomisedStacks_get_value_from_specified_stack() {
+    public void test_popAt_from_setOfStacks_get_value_from_specified_stack() {
 
-        SetOfCustomisedStacksWithArrayList setOfStacks = new SetOfCustomisedStacksWithArrayList(3);
+        SetOfCustomisedStacksRecursivelyWithArrayList setOfStacks = new SetOfCustomisedStacksRecursivelyWithArrayList(3);
         setOfStacks.push(10);
         setOfStacks.push(11);
         setOfStacks.push(12);
