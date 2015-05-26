@@ -3,12 +3,11 @@ package test;
 import main.dataStructures.LinkedLists.Lib.DoublyLinkedList;
 import main.dataStructures.LinkedLists.Lib.IntWrapper;
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
-import main.dataStructures.LinkedLists.Seven.PalindromeIteratively;
 import main.dataStructures.LinkedLists.Seven.PalindromeRecursive;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertTrue;
+import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class PalindromeRecursiveTest {
 

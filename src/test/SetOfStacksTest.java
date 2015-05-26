@@ -2,7 +2,7 @@ package test;
 
 import junit.framework.TestCase;
 import main.dataStructures.StacksAndQueues.Three.SetOfStacks;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class SetOfStacksTest extends TestCase {
 

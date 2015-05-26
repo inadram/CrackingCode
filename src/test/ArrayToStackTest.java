@@ -3,8 +3,8 @@ package test;
 import main.dataStructures.StacksAndQueues.One.ArrayToStack;
 import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ArrayToStackTest {
 

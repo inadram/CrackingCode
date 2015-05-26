@@ -1,10 +1,10 @@
 package test;
 
 import main.dataStructures.StacksAndQueues.Three.SetOfCustomisedStacksRecursivelyWithArrayList;
-import main.dataStructures.StacksAndQueues.Three.SetOfStacksWithArrayList;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 public class SetOfCustomisedStacksRecursivelyWithArrayListTest {
 

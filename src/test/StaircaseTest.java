@@ -1,10 +1,11 @@
 package test;
 
-import junit.framework.TestCase;
 import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.One.Staircase;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-public class StaircaseTest extends TestCase {
+import static org.junit.Assert.assertEquals;
+
+public class StaircaseTest {
 
     @Test
     public void staircase_with_1_step() {

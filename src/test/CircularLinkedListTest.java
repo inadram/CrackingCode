@@ -3,9 +3,10 @@ package test;
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 import main.dataStructures.LinkedLists.Six.CircularLinkedList;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 public class CircularLinkedListTest {
 

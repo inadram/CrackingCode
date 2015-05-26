@@ -1,13 +1,11 @@
 package test;
 
-import main.dataStructures.LinkedLists.Four.PartitionLinkedByClone;
 import main.dataStructures.LinkedLists.Four.PartitionLinkedInPlace;
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNull;
+import static org.junit.Assert.assertEquals; import static org.junit.Assert.assertNull;
 
 public class PartitionLinkedInPlaceTest {
     LinkedListNode linkedListNode;

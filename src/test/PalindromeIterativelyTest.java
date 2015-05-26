@@ -2,10 +2,10 @@ package test;
 
 import main.dataStructures.LinkedLists.Lib.DoublyLinkedList;
 import main.dataStructures.LinkedLists.Seven.PalindromeIteratively;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertTrue;
+import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class PalindromeIterativelyTest{
 

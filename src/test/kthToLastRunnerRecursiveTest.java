@@ -2,12 +2,11 @@ package test;
 
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
-import main.dataStructures.LinkedLists.Two.KthToLastRecursive;
 import main.dataStructures.LinkedLists.Two.kthToLastRunnerRecursive;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class kthToLastRunnerRecursiveTest  {
     LinkedListNode linkedListNode;

@@ -1,9 +1,9 @@
 package test;
 
 import main.dataStructures.ArraysAndStrings.Five.SetCharCompression;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class SetCharCompressionTest {
 

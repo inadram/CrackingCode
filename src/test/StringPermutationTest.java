@@ -1,8 +1,8 @@
 package test;
 
 import main.dataStructures.ArraysAndStrings.three.StringPermutation;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
@@ -16,7 +16,7 @@ public class StringPermutationTest {
 
     StringPermutation stringPermutation;
 
-    @BeforeClass
+    @Before
     public void setup() {
         stringPermutation = new StringPermutation();
     }

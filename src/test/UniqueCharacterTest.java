@@ -1,8 +1,8 @@
 package test;
 
 import main.dataStructures.ArraysAndStrings.one.UniqueCharacter;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
@@ -13,7 +13,7 @@ public class UniqueCharacterTest {
     String uniqueCharacterString = "asdfghjkloiuytr";
     String NotUniqueCharacterString = "asdfghajkloiuytr";
 
-    @BeforeClass
+    @Before
     public void setup() {
         uniqueCharacter= new UniqueCharacter();
     }

@@ -24,6 +24,7 @@ public class Stack {
         if (head != null) {
             int data = head.data;
             head = head.next;
+            tail = tail.next;
             return data;
         } else {
             return -1;
@@ -35,6 +36,6 @@ public class Stack {
     }
 
     public int size() {
-        return this.size++;
+        return this.size;
     }
 }

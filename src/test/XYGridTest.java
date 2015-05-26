@@ -2,7 +2,7 @@ package test;
 
 import junit.framework.TestCase;
 import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two.XYGrid;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 public class XYGridTest extends TestCase {
 

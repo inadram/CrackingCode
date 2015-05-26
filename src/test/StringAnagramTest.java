@@ -1,11 +1,12 @@
 package test;
 
 import main.dataStructures.ArraysAndStrings.three.StringAnagram;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.junit.Before;
+import org.junit.Test;
 
-import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.TestCase.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 
 public class StringAnagramTest {
 
@@ -16,8 +17,8 @@ public class StringAnagramTest {
 
     StringAnagram stringAnagram;
 
-    @BeforeClass
-    public void setup() {
+    @Before
+    public void  setup() {
         stringAnagram = new StringAnagram();
     }
 
@@ -26,6 +27,8 @@ public class StringAnagramTest {
         assertTrue(stringAnagram.checkWithSort(anagramOne, anagramTwo));
         assertFalse(stringAnagram.checkWithSort(one, two));
     }
+
+
 
     @Test
     public void test_if_two_strings_are_anagram_with_occurrence() {
