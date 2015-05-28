@@ -1,6 +1,6 @@
 package main.dataStructures.ArraysAndStrings.Five;
 
-public class lib {
+public class Lib {
     public static int countCompressedCharacters(String someString) {
         if(someString ==null || someString.isEmpty()){
             return 0;

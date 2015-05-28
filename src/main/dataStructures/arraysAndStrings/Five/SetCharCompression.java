@@ -3,7 +3,7 @@ package main.dataStructures.ArraysAndStrings.Five;
 public class SetCharCompression {
 
     public String compress(String someString) {
-        int size = lib.countCompressedCharacters(someString);
+        int size = Lib.countCompressedCharacters(someString);
         if(someString.length()<= size){
             return someString;
         }

@@ -2,7 +2,7 @@ package main.dataStructures.ArraysAndStrings.Five;
 
 public class StringBuilderCompression {
     public String compress(String someString) {
-        if (lib.shouldReturnOriginalString(someString)) return someString;
+        if (Lib.shouldReturnOriginalString(someString)) return someString;
 
         StringBuilder compressedString = new StringBuilder();
         char existing=someString.charAt(0);

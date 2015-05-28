@@ -3,7 +3,7 @@ package main.dataStructures.ArraysAndStrings.Five;
 public class StringCompression {
 
     public String compress(String someString) {
-        if (lib.shouldReturnOriginalString(someString)) return someString;
+        if (Lib.shouldReturnOriginalString(someString)) return someString;
 
         String compressedString ="";
         char existing=someString.charAt(0);
@@ -12,6 +12,7 @@ public class StringCompression {
             if(existing == character){
                count++;
             }else{
+                //performance issue !  compress(String) concatenates strings using + in a loop
                 compressedString+=existing+""+count;
                 count=1;
                 existing =character;

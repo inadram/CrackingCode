@@ -2,13 +2,13 @@ package test;
 
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
-import main.dataStructures.LinkedLists.Two.kthToLastRunnerRecursive;
+import main.dataStructures.LinkedLists.Two.KthToLastRunnerRecursive;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class kthToLastRunnerRecursiveTest  {
+public class KthToLastRunnerRecursiveTest {
     LinkedListNode linkedListNode;
     @Before
     public void setUp(){
@@ -32,7 +32,7 @@ public class kthToLastRunnerRecursiveTest  {
     @Test
     public void test_kth_element_to_last_return(){
 
-        kthToLastRunnerRecursive kthToLast =new kthToLastRunnerRecursive();
+        KthToLastRunnerRecursive kthToLast =new KthToLastRunnerRecursive();
         int actualData=kthToLast.get(linkedListNode, 8);
 
         assertEquals(actualData,108);
@@ -41,7 +41,7 @@ public class kthToLastRunnerRecursiveTest  {
     @Test
     public void test_out_of_boundary_kth_element_to_last_return(){
 
-        kthToLastRunnerRecursive kthToLast =new kthToLastRunnerRecursive();
+        KthToLastRunnerRecursive kthToLast =new KthToLastRunnerRecursive();
         int actualData=kthToLast.get(linkedListNode, 16);
 
         assertEquals(actualData,-1);

@@ -9,9 +9,8 @@ public class TreeMapCompression {
     public String compress(String inputString) {
         SortedMap<Character,Integer> countSortedOccurrence =new TreeMap<Character, Integer>();
         for(char character:inputString.toCharArray()){
-            Integer count = countSortedOccurrence.get(character);
-            count = (count ==null)?1: ++count;
-            countSortedOccurrence.put(character,count);
+            Integer count = countSortedOccurrence.containsKey(character)?countSortedOccurrence.get(character):0;
+            countSortedOccurrence.put(character,++count);
         }
         StringBuilder compressedStringBuilder=new StringBuilder();
         for(Map.Entry<Character,Integer> entrySet:countSortedOccurrence.entrySet()){

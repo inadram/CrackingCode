@@ -2,7 +2,7 @@ package main.dataStructures.LinkedLists.Two;
 
 import main.dataStructures.LinkedLists.Lib.LinkedListNode;
 
-public class kthToLastRunnerRecursive {
+public class KthToLastRunnerRecursive {
 
     public int get(LinkedListNode linkedListNode, int kth){
         return getByRunner(linkedListNode,linkedListNode,kth);

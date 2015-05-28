@@ -19,7 +19,7 @@ public class ArrayToStack {
     }
 
     private int getColumnAt(int positionAt) {
-        return (int) Math.floor(positionAt / 5);
+        return positionAt / 5;
     }
 
 
@@ -28,7 +28,7 @@ public class ArrayToStack {
     }
 
     private int getColumn() {
-        return (int) Math.floor(position/5);
+        return position/5;
     }
 
     public int peek() {
