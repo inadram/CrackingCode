@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Three.MagicIndex;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Three.MagicIndex;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

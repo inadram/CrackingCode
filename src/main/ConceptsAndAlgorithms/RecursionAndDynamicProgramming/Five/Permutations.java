@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Five;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Five;
 
 import java.util.ArrayList;
 

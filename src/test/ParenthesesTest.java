@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Six.Parentheses;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Six.Parentheses;
 import org.junit.Test;
 
 import java.util.HashSet;

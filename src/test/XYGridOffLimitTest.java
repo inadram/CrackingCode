@@ -1,7 +1,7 @@
 package test;
 
 import junit.framework.TestCase;
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two.XYGridOffLimit;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Two.XYGridOffLimit;
 import org.junit.Test;
 
 import java.awt.*;

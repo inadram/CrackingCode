@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.One;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.One;
 
 public class Staircase {
 

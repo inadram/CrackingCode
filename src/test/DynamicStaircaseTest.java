@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.One.DynamicStaircase;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.One.DynamicStaircase;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

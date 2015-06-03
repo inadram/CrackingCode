@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Six;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Six;
 
 import java.util.HashSet;
 

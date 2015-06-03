@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Four;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Four;
 
 import java.util.ArrayList;
 

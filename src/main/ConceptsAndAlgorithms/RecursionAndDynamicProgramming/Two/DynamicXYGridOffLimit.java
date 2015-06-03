@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Two;
 
 import java.awt.*;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Three;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Three;
 
 public class MagicIndex {
 

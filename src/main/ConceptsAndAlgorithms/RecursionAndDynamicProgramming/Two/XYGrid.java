@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two;
+package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Two;
 
 public class XYGrid {
     public int navigate(int x, int y) {

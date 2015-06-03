@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Five.Permutations;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Five.Permutations;
 import org.junit.Test;
 
 import java.util.ArrayList;

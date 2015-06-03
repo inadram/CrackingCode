@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two.XYGridIsFree;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Two.XYGridIsFree;
 import org.junit.Test;
 
 import java.awt.*;

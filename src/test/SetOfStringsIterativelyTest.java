@@ -1,6 +1,6 @@
 package test;
 
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Four.SetOfStringsIteratively;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Four.SetOfStringsIteratively;
 import org.junit.Before;
 import org.junit.Test;
 

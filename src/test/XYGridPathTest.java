@@ -1,7 +1,7 @@
 package test;
 
 import junit.framework.TestCase;
-import main.ConceptsAndAlgorothms.RecursionAndDynamicProgramming.Two.XYGridPath;
+import main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Two.XYGridPath;
 import org.junit.Test;
 
 import java.awt.*;
