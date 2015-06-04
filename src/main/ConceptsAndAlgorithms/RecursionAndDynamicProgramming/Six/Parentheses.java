@@ -13,31 +13,11 @@ public class Parentheses {
             return collection;
         }
         if(openLeft>0) {
-            collection= generate(decrease(openLeft), closeLeft, output.concat("("),collection);
+            collection= generate(openLeft-1, closeLeft, output.concat("("),collection);
         }
-        if(closeLeft>0 && (opened(output) > closed(output))){
-            collection =generate(openLeft,decrease(closeLeft),output.concat(")"),collection);
+        if(closeLeft>openLeft){
+            collection =generate(openLeft,closeLeft-1,output.concat(")"),collection);
         }
        return   collection;
-
     }
-
-    private int closed(String output) {
-        return countOccurrence(output,")");
-    }
-
-    private int opened(String output) {
-        return countOccurrence(output,"(");
-    }
-
-    private int decrease(int number){
-         return (number<=1)?0:--number;
-    }
-
-    private int countOccurrence(String str, String character){
-        int length = str.length();
-        String replace = str.replace(character, "");
-        return length - replace.length();
-    }
-
 }
