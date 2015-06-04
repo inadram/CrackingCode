@@ -4,31 +4,40 @@ import java.util.HashSet;
 
 public class Parentheses {
     public HashSet<String> getAll(int i) {
-        if(i==1){
-            HashSet<String> parentheses= new HashSet<String>();
-            parentheses.add("()");
-            return parentheses;
-        }
-        HashSet<String> parentheses = getAll(--i);
-        HashSet<String> allParentheses= new HashSet<String>();
-        for(String str:parentheses){
-            allParentheses = generate(str,0,allParentheses);
-            if(!allParentheses.contains("()"+str)) {
-                allParentheses.add("()" + str);
-            }
-        }
-        return allParentheses;
+       return generate(i,i,"", new HashSet<String>());
     }
 
-    private HashSet<String> generate(String str,int index, HashSet<String> allParentheses) {
-        if(index<str.length() && str.charAt(index)!='(') {
-            String prefix = str.substring(0, index);
-            String suffix = str.substring(index, str.length());
-            allParentheses.add(prefix.concat("()").concat(suffix));
+    public HashSet<String> generate(int openLeft, int closeLeft, String output, HashSet<String> collection){
+        if(openLeft==0 && closeLeft==0){
+            collection.add(output);
+            return collection;
         }
-        if(index>=str.length()){
-            return allParentheses;
+        if(openLeft>0) {
+            collection= generate(decrease(openLeft), closeLeft, output.concat("("),collection);
         }
-        return  generate(str,++index,allParentheses);
+        if(closeLeft>0 && (opened(output) > closed(output))){
+            collection =generate(openLeft,decrease(closeLeft),output.concat(")"),collection);
+        }
+       return   collection;
+
     }
+
+    private int closed(String output) {
+        return countOccurrence(output,")");
+    }
+
+    private int opened(String output) {
+        return countOccurrence(output,"(");
+    }
+
+    private int decrease(int number){
+         return (number<=1)?0:--number;
+    }
+
+    private int countOccurrence(String str, String character){
+        int length = str.length();
+        String replace = str.replace(character, "");
+        return length - replace.length();
+    }
+
 }

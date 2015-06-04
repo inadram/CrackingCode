@@ -7,7 +7,7 @@ FOLLOW UP
 What if the values are not distinct?[ [three][103] ]
 4. Write a method to return all subsets of a set. [ [four][104] ]
 5. Write a method to compute all permutations of a string. [ [five][105] ]
-6. Implement an algorithm to print all valid (e.g., properly opened and closed) combinations of n-pairs of parentheses.
+6. Implement an algorithm to print all valid (e.g., properly opened and closed) combinations of n-pairs of parenthesesRecursively.
    EXAMPLE
    Input: 3
    Output:((())), (()()), (())(), ()(()), ()()() [ [six][106] ]

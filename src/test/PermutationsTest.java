@@ -27,8 +27,8 @@ public class PermutationsTest{
         ArrayList<String> actualPermutations= permutations.getAllPermutations("ab".toCharArray(), 0, new ArrayList<String>());
 
         ArrayList<String> expected = new ArrayList<String>();
-        expected.add("ab");
         expected.add("ba");
+        expected.add("ab");
         assertEquals(expected.size(),actualPermutations.size());
         for(int i=0 ;i<expected.size();i++) {
             assertEquals(expected.get(i), actualPermutations.get(i));
