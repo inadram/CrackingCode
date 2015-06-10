@@ -11,7 +11,7 @@
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues
-[250]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorothms/RecursionAndDynamicProgramming
+[250]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming
 
 
 ### [test][901]
