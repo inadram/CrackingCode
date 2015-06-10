@@ -13,6 +13,9 @@ What if the values are not distinct?[ [three][103] ]
    Output:((())), (()()), (())(), ()(()), ()()() [ [six][106] ]
 
 7. Implement the "paint fill" function that one might see on many image editing programs. That is, given a screen (represented by a two-dimensional array of colors), a point, and a new color, fill in the surrounding area until the color changes from the original color [ [seven][107] ]
+
+
+8.  Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent), write code to calculate the number of ways of representing n cents. [ [eight][108] ]
  
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/One
@@ -22,3 +25,4 @@ What if the values are not distinct?[ [three][103] ]
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Five
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Six
 [107]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Seven
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Eight
