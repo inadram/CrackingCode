@@ -1,8 +1,8 @@
-package main.dataStructures.TreesAndGraphs;
+package main.dataStructures.TreesAndGraphs.Lib.DirectedGraph;
 
 public class Edge {
-    private final Vertex from;
-    private final Vertex to;
+    public final Vertex from;
+    public final Vertex to;
 
     public Edge(Vertex from, Vertex to) {
         this.from = from;
