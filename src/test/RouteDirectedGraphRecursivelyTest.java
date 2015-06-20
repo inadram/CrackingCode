@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Two.RouteDirectedGraph;
+import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Two.RouteDirectedGraphRecursively;
 import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Vertex;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class RouteDirectedGraphTest {
+public class RouteDirectedGraphRecursivelyTest {
 
 
     Vertex v10 =new Vertex(10);
@@ -52,22 +52,25 @@ public class RouteDirectedGraphTest {
     }
 
     @Test
-    public void test_if_there_is_route_between_two_vertex(){
-        RouteDirectedGraph routeDirectedGraph = new RouteDirectedGraph();
-        assertTrue(routeDirectedGraph.check(v10, v11));
+    public void test_if_there_is_route_between_two_vertex_recursively(){
+        RouteDirectedGraphRecursively routeDirectedGraph = new RouteDirectedGraphRecursively();
+        assertTrue(routeDirectedGraph.checkRecursively(v10, v11));
     }
 
     @Test
-    public void test_if_there_is_no_route_between_two_vertex(){
-        RouteDirectedGraph routeDirectedGraph = new RouteDirectedGraph();
-        assertFalse(routeDirectedGraph.check(v11, v15));
+    public void test_if_there_is_no_route_between_two_vertex_recursively(){
+        RouteDirectedGraphRecursively routeDirectedGraph = new RouteDirectedGraphRecursively();
+        assertFalse(routeDirectedGraph.checkRecursively(v11, v15));
 
     }
 
     @Test
-    public void test_if_there_is_route_between_two_far_vertex(){
-        RouteDirectedGraph routeDirectedGraph = new RouteDirectedGraph();
-        assertTrue(routeDirectedGraph.check(v10, v16));
+    public void test_if_there_is_route_between_two_far_vertex_recursively(){
+        RouteDirectedGraphRecursively routeDirectedGraph = new RouteDirectedGraphRecursively();
+        assertTrue(routeDirectedGraph.checkRecursively(v11, v16));
     }
+
+
+
 
 }
