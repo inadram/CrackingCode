@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Two.RouteDirectedGraphRecursively;
+import main.dataStructures.TreesAndGraphs.RouteDirectedGraphRecursively;
 import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Vertex;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Two;
+package main.dataStructures.TreesAndGraphs;
 import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Edge;
 import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Vertex;
 
