@@ -16,6 +16,8 @@ What if the values are not distinct?[ [three][103] ]
 
 
 8.  Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent), write code to calculate the number of ways of representing n cents. [ [eight][108] ]
+
+9.  Write an algorithm to prim all ways of arranging eight queens on an 8x8 chess board so that none of them share the same row, column or diagonal. In this case, "diagonal" means all diagonals, not just the two that bisect the board. [ [nine][109] ]
  
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/One
@@ -26,3 +28,4 @@ What if the values are not distinct?[ [three][103] ]
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Six
 [107]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Seven
 [108]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Eight
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Nine
