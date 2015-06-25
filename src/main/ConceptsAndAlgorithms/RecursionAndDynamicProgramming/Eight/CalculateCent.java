@@ -1,7 +1,7 @@
 package main.ConceptsAndAlgorithms.RecursionAndDynamicProgramming.Eight;
 
 public class CalculateCent {
-    public int execute(int remindMoney,int denom) {
+    public int execute(int remainMoney,int denom) {
         int nextDenom=0;
         switch (denom) {
             case 25:
@@ -17,8 +17,8 @@ public class CalculateCent {
                 return 1;
         }
         int ways =0;
-        for(int i=0;i*denom<=remindMoney;i++){
-            ways+=execute(remindMoney - i * denom,nextDenom);
+        for(int i=0;i*denom<=remainMoney;i++){
+            ways+=execute(remainMoney - i * denom,nextDenom);
         }
         return ways;
 
