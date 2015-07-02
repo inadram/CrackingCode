@@ -9,4 +9,8 @@ public class TheBox {
         this.height = height;
         this.depth = depth;
     }
+
+    public boolean canBeAbove(TheBox b) {
+        return b == null || width < b.width && height < b.height && depth < b.depth;
+    }
 }
