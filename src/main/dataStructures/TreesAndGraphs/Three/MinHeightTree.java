@@ -1,4 +1,4 @@
-package main.dataStructures.TreesAndGraphs;
+package main.dataStructures.TreesAndGraphs.Three;
 
 import main.dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
 

@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.TreesAndGraphs.MinHeightTree;
+import main.dataStructures.TreesAndGraphs.Three.MinHeightTree;
 import main.dataStructures.TreesAndGraphs.Lib.Tree.TreeHeight;
 import main.dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
 import org.junit.Test;

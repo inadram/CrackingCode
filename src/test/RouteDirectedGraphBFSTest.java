@@ -1,6 +1,6 @@
 package test;
 
-import main.dataStructures.TreesAndGraphs.RouteDirectedGraphBFS;
+import main.dataStructures.TreesAndGraphs.Two.RouteDirectedGraphBFS;
 import main.dataStructures.TreesAndGraphs.Lib.DirectedGraph.Vertex;
 import org.junit.Before;
 import org.junit.Test;
