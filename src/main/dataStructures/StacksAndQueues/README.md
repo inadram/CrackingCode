@@ -8,8 +8,11 @@
    (2) A disk is slid off the top of one tower onto the next tower.
    (3) A disk can only be placed on top of a larger disk.
    Write a program to move the disks from the first tower to the last using stacks [ [four][104] ]
+5. Implement a MyQueue class which implements a queue using two stacks. [ [five][105] ]   
+   
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/One
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Two
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Three
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Four
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Five
