@@ -100,7 +100,7 @@ public class ArrayToFlexibleStack {
     public int pop(int stackNum) throws Exception {
         StackData stack = stacks[stackNum];
         if (stack.numberOfItems == 0) {
-            throw new Exception("Trying to pop an empty stack.");
+            throw new Exception("Trying to deQueue an empty stack.");
         }
         int value = buffer[stack.lastEntryIndex];
         buffer[stack.lastEntryIndex] = 0;
