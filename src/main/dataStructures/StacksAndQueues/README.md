@@ -9,7 +9,8 @@
    (3) A disk can only be placed on top of a larger disk.
    Write a program to move the disks from the first tower to the last using stacks [ [four][104] ]
 5. Implement a MyQueue class which implements a queue using two stacks. [ [five][105] ]
-6. Write a program to sort a stack in ascending order (with biggest items on top). You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure (such as an array). The stack supports the following operations: push, pop, peek, and isEmpty. [[six][106]]   
+6. Write a program to sort a stack in ascending order (with biggest items on top). You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure (such as an array). The stack supports the following operations: push, pop, peek, and isEmpty. [[six][106]] 
+7. An animal shelter holds only dogs and cats, and operates on a strictly "first in, first out" basis. People must adopt either the "oldest" (based on arrival time) of all animals at the shelter, or they can select whether they would prefer a dog or a cat (and will receive the oldest animal of that type). They cannot select which specific animal they would like. Create the data structures to maintain this system and implement operations such as enqueue, dequeueAny, dequeueDog and dequeueCat. You may use the built-in LinkedList data structure [ [seven][107]]  
    
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/One
@@ -18,3 +19,4 @@
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Four
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Five
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Seven
