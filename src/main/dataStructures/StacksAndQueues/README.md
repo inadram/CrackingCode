@@ -8,7 +8,8 @@
    (2) A disk is slid off the top of one tower onto the next tower.
    (3) A disk can only be placed on top of a larger disk.
    Write a program to move the disks from the first tower to the last using stacks [ [four][104] ]
-5. Implement a MyQueue class which implements a queue using two stacks. [ [five][105] ]   
+5. Implement a MyQueue class which implements a queue using two stacks. [ [five][105] ]
+6. Write a program to sort a stack in ascending order (with biggest items on top). You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure (such as an array). The stack supports the following operations: push, pop, peek, and isEmpty. [[six][106]]   
    
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/One
@@ -16,3 +17,4 @@
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Three
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Four
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues/Six
