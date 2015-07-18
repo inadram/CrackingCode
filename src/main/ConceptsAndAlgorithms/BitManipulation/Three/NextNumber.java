@@ -5,18 +5,14 @@ import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.Utils;
 
 public class NextNumber {
     public int getBigger(int number) {
-        //11011001111100
-        //11011010011111
         int i = findNoneTrailingZeroPosition(number);
         int numberOfOnes =HowManyOnes.get(((1 << i) - 1) & number);
-        number = Utils.clearRightSide(number, i+1);
-        number = Utils.update(number, i + 1);
-        return number| ((1<<numberOfOnes)-1);
+        number = Utils.clearRightSide(number, i+1);  // 11111
+        number = Utils.update(number, i + 1);        //101111
+        return number| ((1<<(numberOfOnes-1))-1);
     }
 
     public int getSmaller(int number) {
-        //11011001111100
-        //11011001111011
         int i = findTrailingZeroPosition(number);
         number = Utils.clearRightSide(number,i+1);
         return number | ((1<<i)-1);
@@ -36,7 +32,7 @@ public class NextNumber {
 
     private int findNoneTrailingZeroPosition(int number) {
         int size=0;
-        for (int i = 1; number >= 1; i++) {
+        for (int i = 1; number >= 0; i++) {
             size=i;
             if (number % 2 != 0) {
                 int temp = number / 2;

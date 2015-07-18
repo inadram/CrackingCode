@@ -11,7 +11,7 @@ public class NextNumberTest {
     public void test_get_next_bigger_number() {
         NextNumber nextNumber = new NextNumber();
         int number = 13948; //11011001111100
-        int nextBiggerNumber = 13983; //11011010011111
+        int nextBiggerNumber = 13967; //11011010001111
         int actual = nextNumber.getBigger(number);
         assertEquals(nextBiggerNumber, actual);
     }
