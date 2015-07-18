@@ -1,9 +1,10 @@
-package main.ConceptsAndAlgorithms.BitManipulation.Three.Lib;
+package main.ConceptsAndAlgorithms.BitManipulation.Lib;
 
 public class Utils {
-    public static int update(int number, int i) {
+    public static int update(int number, int i, int value) {
         number = clear(number, i);
-        return set(number, i);
+        if(value!=0) number= set(number, i);
+        return number;
     }
 
     public static boolean get(int number, int i) {

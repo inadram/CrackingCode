@@ -1,14 +1,14 @@
 package main.ConceptsAndAlgorithms.BitManipulation.Three;
 
-import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.HowManyOnes;
-import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.Utils;
+import main.ConceptsAndAlgorithms.BitManipulation.Lib.HowManyOnes;
+import main.ConceptsAndAlgorithms.BitManipulation.Lib.Utils;
 
 public class NextNumber {
     public int getBigger(int number) {
         int i = findNoneTrailingZeroPosition(number);
         int numberOfOnes =HowManyOnes.get(((1 << i) - 1) & number);
         number = Utils.clearRightSide(number, i+1);  // 11111
-        number = Utils.update(number, i + 1);        //101111
+        number = Utils.update(number, i + 1,1);        //101111
         return number| ((1<<(numberOfOnes-1))-1);
     }
 

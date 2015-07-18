@@ -1,7 +1,7 @@
 package main.ConceptsAndAlgorithms.BitManipulation.Five;
 
-import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.HowManyOnes;
-import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.Utils;
+import main.ConceptsAndAlgorithms.BitManipulation.Lib.HowManyOnes;
+import main.ConceptsAndAlgorithms.BitManipulation.Lib.Utils;
 
 public class ConvertAtoB {
     public int get(int a, int b) {

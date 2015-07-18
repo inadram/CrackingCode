@@ -1,6 +1,6 @@
 package main.ConceptsAndAlgorithms.BitManipulation.Three;
 
-import main.ConceptsAndAlgorithms.BitManipulation.Three.Lib.HowManyOnes;
+import main.ConceptsAndAlgorithms.BitManipulation.Lib.HowManyOnes;
 
 public class NextNumberBruteForce {
     public int getBigger(int number) {

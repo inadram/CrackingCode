@@ -13,7 +13,10 @@ If the number cannot be represented accurately in binary with at most 32 charact
 
 5.  Write a function to determine the number of bits required to convert integer A to integer B.[[five][105]]
 
+6.  Write a program to swap odd and even bits in an integer with as few instructions as possible(e.g.,bit 0 and bit 1 are swapped ,bit 2 and bit 3 are swapped,and so on).[[six][106]]
+
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/One
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Two
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Three
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Six

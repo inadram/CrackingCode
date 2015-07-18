@@ -1,4 +1,4 @@
-package main.ConceptsAndAlgorithms.BitManipulation.Three.Lib;
+package main.ConceptsAndAlgorithms.BitManipulation.Lib;
 
 public class HowManyOnes {
     public static int get(int number) {
