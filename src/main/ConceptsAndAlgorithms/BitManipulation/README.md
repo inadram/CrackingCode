@@ -15,8 +15,14 @@ If the number cannot be represented accurately in binary with at most 32 charact
 
 6.  Write a program to swap odd and even bits in an integer with as few instructions as possible(e.g.,bit 0 and bit 1 are swapped ,bit 2 and bit 3 are swapped,and so on).[[six][106]]
 
+7.  An array A contains all the integers from 0 through n, except for one number which is missing.
+In this problem, we cannot access an entire integer in A with a single operation. 
+The elements of A are represented in binary, and the only operation we can use to access them is "fetch the jth bit of A[i]," which takes constant time.
+Write code to find the missing integer. Can you do it in 0(n) time?
+
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/One
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Two
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Three
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Five
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Seven
