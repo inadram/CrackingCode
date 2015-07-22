@@ -7,6 +7,5 @@
     Example: input [ 1,2,3 ] represents 123 -> output [ 1,2,4 ]  [[ID4809209524781056][102]]
 
     
-[101]:https://github.com/inadram/CrackingCode/blob/6f25e727cda07b3fa5a496fc9ca9d65951fc78b3/src/main/Questions/ID5665972218232832
-[102]:https://github.com/inadram/CrackingCode/blob/6f25e727cda07b3fa5a496fc9ca9d65951fc78b3/src/main/Questions/ID4809209524781056
-    
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
