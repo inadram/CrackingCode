@@ -61,7 +61,7 @@
     
 
     
-[101]:https://github.com/inadram/CrackingCode/blob/6f25e727cda07b3fa5a496fc9ca9d65951fc78b3/src/main/Questions/ID5665972218232832
-[102]:https://github.com/inadram/CrackingCode/blob/6f25e727cda07b3fa5a496fc9ca9d65951fc78b3/src/main/Questions/ID4809209524781056
-[103]:https://github.com/inadram/CrackingCode/blob/6f25e727cda07b3fa5a496fc9ca9d65951fc78b3/src/main/Questions/ID5191526374178816
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5191526374178816
     
