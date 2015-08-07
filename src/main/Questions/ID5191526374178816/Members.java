@@ -27,14 +27,14 @@ public class Members {
 
             for (String subGroupMember : subGroupMembers) {
                 if (isaGroup(groupMembers, subGroupMember)) {
-                    if(!visited.contains(subGroupMember)) {
+                    if (!visited.contains(subGroupMember)) {
                         visited.add(subGroupMember);
                         subGroupMembersQueue.add(groupMembers.get(subGroupMember));
                     }
 
                     MyGroup subMyGroup = createMyGroup(subGroupMember);
-                    subMyGroup.MemberOf.put(myGroup.Identity,myGroup);
-                    groupList.put(subMyGroup.Identity,subMyGroup);
+                    subMyGroup.MemberOf.put(myGroup.Identity, myGroup);
+                    groupList.put(subMyGroup.Identity, subMyGroup);
                     myGroup.Members.put(subMyGroup.Identity, subMyGroup);
                 } else {
                     myGroup.Users.add(subGroupMember);
