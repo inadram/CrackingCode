@@ -59,9 +59,12 @@
     ```
     Each group object should contain all the groups it's a memberOf (directly or indirectly), all the groups that are it's members (directly or indirectly) and all users that are it's members. [[ID5191526374178816][103]]
     
-
+4.  Find how many numbers of length n are there such that each number is at least 4 smaller/greater than the number before and after it. 
+    
+    Eg: if n = 5, such numbers are 39518, 15951, etc.  [[ID5085262709260288][104]]
     
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5191526374178816
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5085262709260288
     

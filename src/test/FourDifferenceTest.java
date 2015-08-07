@@ -1,6 +1,6 @@
 package test;
 
-import main.Questions.IDSome.FourDifference;
+import main.Questions.ID5085262709260288.FourDifference;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
