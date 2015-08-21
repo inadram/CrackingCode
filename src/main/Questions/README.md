@@ -63,8 +63,25 @@
     
     Eg: if n = 5, such numbers are 39518, 15951, etc.  [[ID5085262709260288][104]]
     
+5.  Write a function called deepCopy that takes an object and creates a deep copy of it. 
+    
+    var newObj = deepCopy(obj); 
+    
+    (can't use JSON, can't use prototype) [[ID6304195600711680][105]]
+    
+6.  You have k lists of sorted integers. Find the smallest range that includes at least one number from each of the k lists. 
+    
+    For example, 
+    List 1: [4, 10, 15, 24, 26] 
+    List 2: [0, 9, 12, 20] 
+    List 3: [5, 18, 22, 30] 
+    
+    The smallest range here would be [20, 24] as it contains 24 from list 1, 20 from list 2, and 22 from list 3. [[ID16759664][106]]    
+    
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5191526374178816
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5085262709260288
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID6304195600711680
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID16759664
     
