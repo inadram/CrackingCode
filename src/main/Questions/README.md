@@ -76,7 +76,21 @@
     List 2: [0, 9, 12, 20] 
     List 3: [5, 18, 22, 30] 
     
-    The smallest range here would be [20, 24] as it contains 24 from list 1, 20 from list 2, and 22 from list 3. [[ID16759664][106]]    
+    The smallest range here would be [20, 24] as it contains 24 from list 1, 20 from list 2, and 22 from list 3. [[ID16759664][106]] 
+       
+7. Given an array of integers. Find two disjoint contiguous sub-arrays such that the absolute difference between the sum of two sub-array is maximum. 
+   * The sub-arrays should not overlap. 
+   
+   eg- [2 -1 -2 1 -4 2 8] ans - (-1 -2 1 -4) (2 8), diff = 16 
+   
+   I gave him o(n^2) algorithm but he was not satisfied.[[ID19286747][107]]
+   
+       
+8.Give you an array which has n integers,it has both positive and negative integers.Now you need sort this array in a special way.After that,the negative integers should in the front,and the positive integers should in the back.Also the relative position should not be changed. 
+  eg. -1 1 3 -2 2 ans: -1 -2 1 3 2. 
+  o(n)time complexity and o(1) space complexity is perfect.[[ID5201559730257920][108]]
+  
+       
     
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
@@ -84,4 +98,6 @@
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5085262709260288
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID6304195600711680
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID16759664
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID19286747
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5201559730257920
     
