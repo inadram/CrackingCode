@@ -86,9 +86,17 @@
    I gave him o(n^2) algorithm but he was not satisfied.[[ID19286747][107]]
    
        
-8.Give you an array which has n integers,it has both positive and negative integers.Now you need sort this array in a special way.After that,the negative integers should in the front,and the positive integers should in the back.Also the relative position should not be changed. 
+8.  Give you an array which has n integers,it has both positive and negative integers.Now you need sort this array in a special way.After that,the negative integers should in the front,and the positive integers should in the back.Also the relative position should not be changed. 
   eg. -1 1 3 -2 2 ans: -1 -2 1 3 2. 
   o(n)time complexity and o(1) space complexity is perfect.[[ID5201559730257920][108]]
+  
+9.  There is an island which is represented by square matrix NxN. 
+    A person on the island is standing at any given co-ordinates (x,y). He can move in any direction one step right, left, up, down on the island. If he steps outside the island, he dies. 
+    
+    Let island is represented as (0,0) to (N-1,N-1) (i.e NxN matrix) & person is standing at given co-ordinates (x,y). He is allowed to move n steps on the island (along the matrix). What is the probability that he is alive after he walks n steps on the island? 
+    
+    Write a psuedocode & then full code for function 
+    " float probabilityofalive(int x,int y, int n) ".[[ID15556758][109]]  
   
        
     
@@ -100,4 +108,5 @@
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID16759664
 [107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID19286747
 [108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5201559730257920
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID15556758
     
