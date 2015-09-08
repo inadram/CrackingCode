@@ -96,7 +96,15 @@
     Let island is represented as (0,0) to (N-1,N-1) (i.e NxN matrix) & person is standing at given co-ordinates (x,y). He is allowed to move n steps on the island (along the matrix). What is the probability that he is alive after he walks n steps on the island? 
     
     Write a psuedocode & then full code for function 
-    " float probabilityofalive(int x,int y, int n) ".[[ID15556758][109]]  
+    " float probabilityofalive(int x,int y, int n) ".[[ID15556758][109]] 
+     
+10.  You are given two array, first array contain integer which represent heights of persons and second array contain how many persons in front of him are standing who are greater than him in term of height and forming a queue. Ex 
+     A: 3 2 1 
+     B: 0 1 1 
+     It means in front of person of height 3 there is no person standing, person of height 2 there is one person in front of him who has greater height then he, similar to person of height 1. Your task to arrange them 
+     Ouput should be. 
+     3 1 2 
+     Here - 3 is at front, 1 has 3 in front ,2 has 1 and 3 in front.[[ID24532662][110]]     
   
        
     
@@ -109,4 +117,5 @@
 [107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID19286747
 [108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5201559730257920
 [109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID15556758
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID24532662
     
