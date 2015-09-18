@@ -10,7 +10,9 @@
     Write a method that, given a guess and a solution, returns the number of hits and pseudo-hits.[[five][105]]
 6.  Given an array of integers, write a method to find indices m and n such that if you sorted 
     elements m through n,the entire array would be sorted.
-    Minimize n - m(that is, find the smallest such sequence).[[six][106]]    
+    Minimize n - m(that is, find the smallest such sequence).[[six][106]] 
+7.  Given any integer, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred Thirty Four"). [[seven][107]]       
+       
     
 
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/One
@@ -18,4 +20,5 @@
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Three
 [104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Four
 [105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Five
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Six
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Seven
