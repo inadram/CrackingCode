@@ -19,7 +19,7 @@ public class PotGameTest {
         pots.add(2);    //B    //A
         pots.add(8);    //A    //B
         pots.add(5);    //B    //A
-       assertEquals(1, potGame.max_coin(pots, 0, pots.size() - 1));
+       assertEquals(13, potGame.max_coin(pots, 0, pots.size() - 1));
     }
 
 }

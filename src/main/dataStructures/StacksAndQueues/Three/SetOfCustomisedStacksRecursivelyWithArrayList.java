@@ -15,10 +15,10 @@ public class SetOfCustomisedStacksRecursivelyWithArrayList extends SetOfStacksWi
         this.limit = limit;
     }
     public void push(int i) {
-        if (setOfStacks.isEmpty() || isStackFull(getLastStack(setOfStacks))) {
+        if (setOfStacks.isEmpty() || isStackFull(getLastStackArray(setOfStacks))) {
             setOfStacks.add(new DoublyStack());
         }
-        getLastStack(setOfStacks).push(i);
+        getLastStackArray(setOfStacks).push(i);
     }
 
     public int popAt(int index) {
@@ -39,7 +39,7 @@ public class SetOfCustomisedStacksRecursivelyWithArrayList extends SetOfStacksWi
 
     }
 
-    DoublyStack getLastStack(ArrayList<DoublyStack> setOfStacks) {
+    DoublyStack getLastStackArray(ArrayList<DoublyStack> setOfStacks) {
         return setOfStacks.get(setOfStacks.size()-1);
     }
 

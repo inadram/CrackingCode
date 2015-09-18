@@ -2,7 +2,6 @@ package main.dataStructures.StacksAndQueues.Three;
 
 
 import main.dataStructures.StacksAndQueues.Lib.DoublyStack;
-import main.dataStructures.StacksAndQueues.Lib.Stack;
 
 import java.util.ArrayList;
 
@@ -16,14 +15,14 @@ public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList
         this.limit = limit;
     }
     public void push(int i) {
-        if (setOfStacks.isEmpty() || isStackFull(getLastStack(setOfStacks))) {
+        if (setOfStacks.isEmpty() || isStackFull(getLastStackCustomise(setOfStacks))) {
             setOfStacks.add(new DoublyStack());
         }
-        getLastStack(setOfStacks).push(i);
+        getLastStackCustomise(setOfStacks).push(i);
     }
 
     public int popAt(int index) {
-        if (getLastStack(setOfStacks).isEmpty()) {
+        if (getLastStackCustomise(setOfStacks).isEmpty()) {
             setOfStacks.remove(setOfStacks.size() - 1);
         }
         int popValue = setOfStacks.get(index).pop();
@@ -35,7 +34,7 @@ public class SetOfCustomisedStacksWithArrayList extends SetOfStacksWithArrayList
         return popValue;
     }
 
-    DoublyStack getLastStack(ArrayList<DoublyStack> setOfStacks) {
+    DoublyStack getLastStackCustomise(ArrayList<DoublyStack> setOfStacks) {
         return setOfStacks.get(setOfStacks.size()-1);
     }
     private int getBottomWithStack(int index){
