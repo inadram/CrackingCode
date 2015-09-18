@@ -12,7 +12,8 @@
     elements m through n,the entire array would be sorted.
     Minimize n - m(that is, find the smallest such sequence).[[six][106]] 
 7.  Given any integer, print an English phrase that describes the integer (e.g., "One Thousand, Two Hundred Thirty Four"). [[seven][107]]
-8.  You are given an array of integers (both positive and negative). Find the contiguous sequence with the largest sum. Return the sum. [[eighth][108]]       
+8.  You are given an array of integers (both positive and negative). Find the contiguous sequence with the largest sum. Return the sum. [[eighth][108]]
+9.  Design a method to find the frequency of occurrences of any given word in a book[[nine][109]]       
        
     
 
@@ -24,3 +25,4 @@
 [106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Six
 [107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Seven
 [108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eighth
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Nine
