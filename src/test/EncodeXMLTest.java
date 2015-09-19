@@ -21,7 +21,6 @@ public class EncodeXMLTest  {
         rules.put("family","1 ");
         rules.put("lastName","4 ");
         rules.put("state","5 ");
-        rules.put(">","0 ");
         rules.put("person","2 ");
         rules.put("firstName","3 ");
 
