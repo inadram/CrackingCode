@@ -13,6 +13,7 @@ public class EncodeXML {
     StringBuilder stringBuilder= new StringBuilder();
 
     public String encode(Document xml) {
+
         Element documentElement = xml.getDocumentElement();
         readElement(documentElement);
         NodeList childNodes = documentElement.getChildNodes();

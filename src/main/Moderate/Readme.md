@@ -25,7 +25,8 @@
     Becomes:
     1 4 McDowell 5 CA 0 2 3 Gayle 0 Some Message 0 0
     Write code to print the encoded version of an XML element (passed in ELament and Attribute objects).[[ten][110]]
-      
+11.  Implement a method rand70 given randSQ- That is,given a method that generates a random number between 0 and 4 (inclusive), write a method that generates a random number between 0 and 6 (inclusive).[[eleven][111]]
+       
        
     
 
@@ -39,3 +40,4 @@
 [108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eighth
 [109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Nine
 [110]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Ten
+[111]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eleven
