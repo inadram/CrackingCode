@@ -26,7 +26,12 @@
     1 4 McDowell 5 CA 0 2 3 Gayle 0 Some Message 0 0
     Write code to print the encoded version of an XML element (passed in ELament and Attribute objects).[[ten][110]]
 11. Implement a method rand70 given randSQ- That is,given a method that generates a random number between 0 and 4 (inclusive), write a method that generates a random number between 0 and 6 (inclusive).[[eleven][111]]
-12. Design an algorithm to find all pairs of integers within an array which sum to a specified value.[[twelve][112]] 
+12. Design an algorithm to find all pairs of integers within an array which sum to a specified value.[[twelve][112]]
+13. Consider a simple node like data structure called BiNode, which has pointers to two other nodes.
+    The data structure BiNode could be used to represent both a binary tree (where node1 is the left node and node2 is the right node)
+    or a doubly linked list (where node1 is the previous node and node2 is the next node). 
+    Implement a method to convert a binary search tree (implemented with BiNode) into a doubly linked list. 
+    The values should be kept in order and the operation should be performed in place (that is,on the original data structure). 
        
        
     
@@ -43,3 +48,4 @@
 [110]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Ten
 [111]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eleven
 [112]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Twelve
+[113]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Thirteen
