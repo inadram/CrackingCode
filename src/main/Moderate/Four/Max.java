@@ -29,10 +29,10 @@ public class Max {
         // 10 -5
         int firstSign = sign(first);
         int secondSign = sign(second);
-        int diffSign = flip(Math.abs(firstSign - secondSign));
+        int diffSign = Math.abs(firstSign - secondSign);
         int k  = flip(diffSign);
-        int firstValue = diffSign * first;
-        int secondValue = diffSign * second;
-        return find(firstValue, secondValue) + k*(first * firstSign + second * secondSign);
+        int firstValue = k * first;
+        int secondValue = k * second;
+        return find(firstValue, secondValue) + find(first * firstSign*diffSign , second * secondSign*diffSign);
     }
 }
