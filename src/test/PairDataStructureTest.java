@@ -1,12 +1,12 @@
 package test;
 
 import main.Moderate.Thirteen.BiNode;
-import main.Moderate.Thirteen.ConvertDataStructure;
+import main.Moderate.Thirteen.PairDataStructure;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ConvertDataStructureTest {
+public class PairDataStructureTest {
 
     @Test
     public void test_convert_tree_to_double_linked_list(){
@@ -31,8 +31,8 @@ public class ConvertDataStructureTest {
         biNode_170.addFirst(160);
         biNode_170.addSecond(180);
 
-        ConvertDataStructure convertDataStructure = new ConvertDataStructure();
-        BiNode actual = convertDataStructure.fromTreeToDoubleLinkedList(biNode_100);
+        PairDataStructure pairDataStructure = new PairDataStructure();
+        pairDataStructure.fromTreeToDoubleLinkedList(biNode_100);
 
         BiNode biNode_d_10 = new BiNode(10);
 
@@ -70,10 +70,10 @@ public class ConvertDataStructureTest {
         biNode_d_170.second = biNode_d_160;
 
         biNode_d_170.addFirst(180);
-        for(int i=0;i<12;i++) {
-            assertEquals(biNode_d_10.data, actual.data);
-            biNode_d_10 = biNode_d_10.first;
-            actual = actual.first;
+        for(int i=0;i<6;i++) {
+            assertEquals(biNode_d_100.data, biNode_100.data);
+            biNode_d_100 = biNode_d_100.second;
+            biNode_100 = biNode_100.first;
         }
 
     }
