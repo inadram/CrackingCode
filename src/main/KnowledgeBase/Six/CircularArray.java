@@ -8,7 +8,10 @@ public  class CircularArray<T> {
     }
 
     public int getIndex(int requestedIndex){
-        return requestedIndex%items.length;
+        if(requestedIndex<0){
+            requestedIndex+=items.length;
+        }
+        return head+requestedIndex%items.length;
     }
     public void set(int index, T value) {
           items[getIndex(index)] = value;
@@ -17,5 +20,9 @@ public  class CircularArray<T> {
 
     public T get(int index) {
         return items[getIndex(index)];
+    }
+
+    public void shiftRight(int i) {
+        head+=i;
     }
 }
