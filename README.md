@@ -9,11 +9,11 @@
   5.  [Recursion and Dynamic Programming][250]  
   
 
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/StacksAndQueues
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs
-[250]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/StacksAndQueues
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs
+[250]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming
 
 
 ### [test][901]

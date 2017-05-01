@@ -25,10 +25,10 @@ The screen has width w, where w is divisible by 8 (that is, no byte will be spli
 The height of the screen, of course, can be derived from the length of the array and the width.
 Implement a function draw HorizontalLine (byte[] screen,int width, int xl, int x2, int y) which draws a horizontal line from (x1,y) to (x2, y).
 
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/One
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Two
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Three
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Five
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Six
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Seven
-[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/BitManipulation/Eight
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/One
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Two
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Three
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Seven
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/BitManipulation/Eight

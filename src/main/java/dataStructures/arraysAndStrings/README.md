@@ -7,10 +7,10 @@
 7.  Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, s1 and s2, write code to check If s2 is a rotation of s1 using only one call to isSubstring (e.g.,"waterbottLe"isarotationof"erbot- tLewat"). [ [eight][8] ]
 
 
-[1]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/one
-[3]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/three
-[4]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/Four
-[5]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/Five
-[6]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/Six
-[7]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/Seven
-[8]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/arraysAndStrings/Eight
+[1]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/one
+[3]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/three
+[4]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/Four
+[5]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/Five
+[6]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/Six
+[7]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/Seven
+[8]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings/Eight

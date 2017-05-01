@@ -44,16 +44,16 @@
        
     
 
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/One
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Two
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Three
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Four
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Five
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Six
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Seven
-[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eighth
-[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Nine
-[110]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Ten
-[111]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Eleven
-[112]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Twelve
-[114]:https://github.com/inadram/CrackingCode/tree/master/src/main/Moderate/Fourteen
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/One
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Two
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Three
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Four
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Seven
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Eighth
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Nine
+[110]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Ten
+[111]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Eleven
+[112]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Twelve
+[114]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Moderate/Fourteen

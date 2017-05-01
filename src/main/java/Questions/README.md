@@ -108,14 +108,14 @@
   
        
     
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5665972218232832
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID4809209524781056
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5191526374178816
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5085262709260288
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID6304195600711680
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID16759664
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID19286747
-[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID5201559730257920
-[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID15556758
-[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/Questions/ID24532662
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID5665972218232832
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID4809209524781056
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID5191526374178816
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID5085262709260288
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID6304195600711680
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID16759664
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID19286747
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID5201559730257920
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID15556758
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/Questions/ID24532662
     

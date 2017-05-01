@@ -8,12 +8,12 @@
 8.  You have two very large binary trees: Tl, with millions of nodes, and T2, with hundreds of nodes.Create an algorithm to decide if T2 is a subtree of Tl. A tree T2 is a subtree of Tl if there exists a node n in Tl such that the subtree ofn is identical to T2. That is, if you cut off the tree at node n, the two trees would be identical.[ [eight][108] ]
 9.  You are given a binary tree in which each node contains a value. Design an algorithm to print all paths which sum to a given value. The path does not need to start or end at the root or a leaf. [ [nine][109] ]    
   
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/One
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Two
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Three
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Four
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Five
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Six
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Seven
-[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Eight 
-[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/TreesAndGraphs/Nine 
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/One
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Two
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Three
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Four
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Seven
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Eight 
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs/Nine 

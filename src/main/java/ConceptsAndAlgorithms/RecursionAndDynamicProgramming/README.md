@@ -20,12 +20,12 @@ What if the values are not distinct?[ [three][103] ]
 9.  Write an algorithm to prim all ways of arranging eight queens on an 8x8 chess board so that none of them share the same row, column or diagonal. In this case, "diagonal" means all diagonals, not just the two that bisect the board. [ [nine][109] ]
  
 
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/One
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Two
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Three
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Four
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Five
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Six
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Seven
-[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Eight
-[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Nine
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/One
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Two
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Three
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Four
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Seven
+[108]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Eight
+[109]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming/Nine

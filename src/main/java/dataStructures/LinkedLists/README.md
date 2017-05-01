@@ -7,10 +7,10 @@
 7.  Implement a function to check if a linked list is a palindrome. [ [seven][107] ]
 
 
-[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/One
-[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Two
-[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Three
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Four
-[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Five
-[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Six
-[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/dataStructures/LinkedLists/Seven
+[101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/One
+[102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Two
+[103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Three
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Four
+[105]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Five
+[106]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Six
+[107]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists/Seven
