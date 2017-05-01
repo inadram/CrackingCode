@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
-import  dataStructures.TreesAndGraphs.One.BalanceTree;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import  dataStructures.treesAndGraphs.One.BalanceTree;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertFalse;

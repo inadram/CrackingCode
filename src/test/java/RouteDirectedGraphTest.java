@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Two.RouteDirectedGraph;
-import  dataStructures.TreesAndGraphs.Lib.DirectedGraph.Vertex;
+import  dataStructures.treesAndGraphs.Two.RouteDirectedGraph;
+import  dataStructures.treesAndGraphs.lib.directedGraph.Vertex;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Four.BinaryTreeToLinkedListBFSAlternative;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Four.BinaryTreeToLinkedListBFSAlternative;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-import  dataStructures.TreesAndGraphs.Five.BinarySearchTreeDFS;
-import  dataStructures.TreesAndGraphs.Five.BinarySearchTreeMinMaxDFS;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Five.BinarySearchTreeDFS;
+import  dataStructures.treesAndGraphs.Five.BinarySearchTreeMinMaxDFS;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

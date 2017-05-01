@@ -12,7 +12,7 @@
 [101]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/arraysAndStrings
 [102]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/LinkedLists
 [103]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/StacksAndQueues
-[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/TreesAndGraphs
+[104]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/dataStructures/treesAndGraphs
 [250]:https://github.com/inadram/CrackingCode/tree/master/src/main/java/ConceptsAndAlgorithms/RecursionAndDynamicProgramming
 
 

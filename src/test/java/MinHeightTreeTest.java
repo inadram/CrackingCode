@@ -1,6 +1,6 @@
-import  dataStructures.TreesAndGraphs.Three.MinHeightTree;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeHeight;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Three.MinHeightTree;
+import  dataStructures.treesAndGraphs.lib.tree.TreeHeight;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,6 +1,6 @@
 import  dataStructures.LinkedLists.Lib.LinkedListNode;
-import  dataStructures.TreesAndGraphs.Four.BinaryTreeToLinkedList;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Four.BinaryTreeToLinkedList;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

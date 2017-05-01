@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Five.BinarySearchTreeDFSArray;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Five.BinarySearchTreeDFSArray;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

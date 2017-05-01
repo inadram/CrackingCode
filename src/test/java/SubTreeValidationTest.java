@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Eight.SubTreeValidation;
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import  dataStructures.treesAndGraphs.Eight.SubTreeValidation;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
-import  dataStructures.TreesAndGraphs.Seven.CommonAncestorWithLinkToParent;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import  dataStructures.treesAndGraphs.Seven.CommonAncestorWithLinkToParent;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

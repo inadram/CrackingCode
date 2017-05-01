@@ -1,5 +1,5 @@
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
-import  dataStructures.TreesAndGraphs.Nine.SumOfTreeNodeLevel;
+import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import  dataStructures.treesAndGraphs.Nine.SumOfTreeNodeLevel;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
