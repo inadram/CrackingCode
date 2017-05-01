@@ -1,6 +1,6 @@
-import  dataStructures.LinkedLists.Lib.LinkedListNode;
-import  dataStructures.treesAndGraphs.Four.BinaryTreeToLinkedList;
-import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import dataStructures.LinkedLists.Lib.LinkedListNode;
+import dataStructures.treesAndGraphs.Four.BinaryTreeToLinkedList;
+import dataStructures.treesAndGraphs.lib.tree.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -15,19 +15,19 @@ public class BinaryTreeToLinkedListTest {
             15  22
      */
 
-    @Test
-    public void convert__each_row_of_binary_tree_to_DLink_list(){
-        BinaryTreeToLinkedList binaryTreeToLinkedList=new BinaryTreeToLinkedList();
-        TreeNode treeNode=new TreeNode(20);
-        TreeNode tree_10 = new TreeNode(10);
-        TreeNode tree_15 = new TreeNode(15);
-        TreeNode tree_22 = new TreeNode(22);
-        treeNode.left = tree_10;
-        tree_10.left = tree_15;
-        tree_10.right = tree_22;
-        ArrayList<LinkedListNode> linkedLists= binaryTreeToLinkedList.convert(treeNode,new ArrayList<LinkedListNode>(),0);
+	@Test
+	public void convert__each_row_of_binary_tree_to_DLink_list() {
+		BinaryTreeToLinkedList binaryTreeToLinkedList = new BinaryTreeToLinkedList();
+		TreeNode treeNode = new TreeNode(20);
+		TreeNode tree_10 = new TreeNode(10);
+		TreeNode tree_15 = new TreeNode(15);
+		TreeNode tree_22 = new TreeNode(22);
+		treeNode.left = tree_10;
+		tree_10.left = tree_15;
+		tree_10.right = tree_22;
+		ArrayList<LinkedListNode> linkedLists = binaryTreeToLinkedList.convert(treeNode, new ArrayList<LinkedListNode>(), 0);
 
-        assertEquals(3,linkedLists.size());
-    }
+		assertEquals(3, linkedLists.size());
+	}
 
 }

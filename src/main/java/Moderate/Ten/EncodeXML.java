@@ -9,45 +9,46 @@ import org.w3c.dom.NodeList;
 import java.util.Map;
 
 public class EncodeXML {
-    private Map<String, String> rules;
+	private Map<String, String> rules;
 
-    public EncodeXML(Map<String, String> rules) {
-        this.rules = rules;
-    }
-    StringBuilder stringBuilder= new StringBuilder();
+	public EncodeXML(Map<String, String> rules) {
+		this.rules = rules;
+	}
 
-    public String encode(Document xml) {
+	StringBuilder stringBuilder = new StringBuilder();
 
-        Element documentElement = xml.getDocumentElement();
-        readElement(documentElement);
-        NodeList childNodes = documentElement.getChildNodes();
-        for(int i=0;i<childNodes.getLength();i++){
-            readNode(childNodes.item(i));
-            stringBuilder.append("0").append(" ");
-        }
-        stringBuilder.append("0").append(" ");
-       return stringBuilder.toString();
-    }
+	public String encode(Document xml) {
 
-    private void readNode(Node item) {
-        stringBuilder.append(rules.get(item.getNodeName()));
-        NamedNodeMap attributes = item.getAttributes();
-        readAttributes(attributes);
-        stringBuilder.append(item.getTextContent()).append(" ");
+		Element documentElement = xml.getDocumentElement();
+		readElement(documentElement);
+		NodeList childNodes = documentElement.getChildNodes();
+		for (int i = 0; i < childNodes.getLength(); i++) {
+			readNode(childNodes.item(i));
+			stringBuilder.append("0").append(" ");
+		}
+		stringBuilder.append("0").append(" ");
+		return stringBuilder.toString();
+	}
 
-    }
+	private void readNode(Node item) {
+		stringBuilder.append(rules.get(item.getNodeName()));
+		NamedNodeMap attributes = item.getAttributes();
+		readAttributes(attributes);
+		stringBuilder.append(item.getTextContent()).append(" ");
 
-    private void readElement(Element documentElement) {
-        stringBuilder.append(rules.get(documentElement.getNodeName()));
-        NamedNodeMap attributes = documentElement.getAttributes();
-        readAttributes(attributes);
-    }
+	}
 
-    private void readAttributes(NamedNodeMap attributes) {
-        for(int i=0;i<attributes.getLength();i++){
-            stringBuilder.append(rules.get(attributes.item(i).getNodeName()));
-            stringBuilder.append(attributes.item(i).getNodeValue()).append(" ");
-        }
-        stringBuilder.append("0").append(" ");
-    }
+	private void readElement(Element documentElement) {
+		stringBuilder.append(rules.get(documentElement.getNodeName()));
+		NamedNodeMap attributes = documentElement.getAttributes();
+		readAttributes(attributes);
+	}
+
+	private void readAttributes(NamedNodeMap attributes) {
+		for (int i = 0; i < attributes.getLength(); i++) {
+			stringBuilder.append(rules.get(attributes.item(i).getNodeName()));
+			stringBuilder.append(attributes.item(i).getNodeValue()).append(" ");
+		}
+		stringBuilder.append("0").append(" ");
+	}
 }

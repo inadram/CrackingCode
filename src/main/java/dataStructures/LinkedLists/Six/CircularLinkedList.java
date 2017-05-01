@@ -1,22 +1,22 @@
 package dataStructures.LinkedLists.Six;
 
-import  dataStructures.LinkedLists.Lib.LinkedListNode;
+import dataStructures.LinkedLists.Lib.LinkedListNode;
 
 public class CircularLinkedList {
-    public int find(LinkedListNode circularLinkedList) {
-        LinkedListNode head = circularLinkedList;
-        LinkedListNode slowRunner = circularLinkedList;
-        LinkedListNode fastRunner = circularLinkedList.next;
-        while(slowRunner!=fastRunner && slowRunner.next!=null && fastRunner.next.next!=null){
-            slowRunner=slowRunner.next;
-            fastRunner = fastRunner.next.next;
-        }
-        slowRunner = slowRunner.next;
-        while (head!=slowRunner){
-            head=head.next;
-            slowRunner= slowRunner.next;
-        }
+	public int find(LinkedListNode circularLinkedList) {
+		LinkedListNode head = circularLinkedList;
+		LinkedListNode slowRunner = circularLinkedList;
+		LinkedListNode fastRunner = circularLinkedList.next;
+		while (slowRunner != fastRunner && slowRunner.next != null && fastRunner.next.next != null) {
+			slowRunner = slowRunner.next;
+			fastRunner = fastRunner.next.next;
+		}
+		slowRunner = slowRunner.next;
+		while (head != slowRunner) {
+			head = head.next;
+			slowRunner = slowRunner.next;
+		}
 
-         return head.data;
-    }
+		return head.data;
+	}
 }

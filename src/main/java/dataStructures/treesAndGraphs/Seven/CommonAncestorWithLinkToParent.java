@@ -1,6 +1,6 @@
 package dataStructures.treesAndGraphs.Seven;
 
-import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
 public class CommonAncestorWithLinkToParent {
 
@@ -14,25 +14,25 @@ public class CommonAncestorWithLinkToParent {
                77  88
        */
 
-    TreeNode commonAncestor = null;
+	TreeNode commonAncestor = null;
 
-    public TreeNode find(TreeNode first, TreeNode second) {
-        findFirst(first, second);
-        return commonAncestor;
-    }
+	public TreeNode find(TreeNode first, TreeNode second) {
+		findFirst(first, second);
+		return commonAncestor;
+	}
 
-    private void findFirst(TreeNode first, TreeNode second) {
-        if (first != null && commonAncestor==null) {
-            findSecond(first, second);
-            findFirst(first.parent, second);
-        }
-    }
+	private void findFirst(TreeNode first, TreeNode second) {
+		if (first != null && commonAncestor == null) {
+			findSecond(first, second);
+			findFirst(first.parent, second);
+		}
+	}
 
-    private void findSecond(TreeNode first, TreeNode second) {
-        if (second != null) {
-            if (first == second) commonAncestor = first;
-            findSecond(first, second.parent);
-        }
+	private void findSecond(TreeNode first, TreeNode second) {
+		if (second != null) {
+			if (first == second) commonAncestor = first;
+			findSecond(first, second.parent);
+		}
 
-    }
+	}
 }

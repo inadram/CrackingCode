@@ -1,6 +1,6 @@
 package dataStructures.treesAndGraphs.Five;
 
-import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
 /*
             100
@@ -12,20 +12,20 @@ import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
 
 public class BinarySearchTreeMinMaxDFS {
-    public boolean check(TreeNode treeNode) {
-        return minMaxDFS(treeNode,Integer.MIN_VALUE,Integer.MAX_VALUE);
-    }
+	public boolean check(TreeNode treeNode) {
+		return minMaxDFS(treeNode, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
 
-    private boolean minMaxDFS(TreeNode treeNode, int minValue, int maxValue) {
-        if (treeNode == null) {
-            return true;
-        }
-        if (treeNode.data < minValue || treeNode.data > maxValue) {
-            return false;
-        }
+	private boolean minMaxDFS(TreeNode treeNode, int minValue, int maxValue) {
+		if (treeNode == null) {
+			return true;
+		}
+		if (treeNode.data < minValue || treeNode.data > maxValue) {
+			return false;
+		}
 
-        return minMaxDFS(treeNode.left, minValue, treeNode.data) && minMaxDFS(treeNode.right, treeNode.data, maxValue);
-    }
+		return minMaxDFS(treeNode.left, minValue, treeNode.data) && minMaxDFS(treeNode.right, treeNode.data, maxValue);
+	}
 
 
 }

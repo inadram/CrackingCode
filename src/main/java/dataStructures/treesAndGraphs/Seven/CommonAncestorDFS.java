@@ -1,6 +1,6 @@
 package dataStructures.treesAndGraphs.Seven;
 
-import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
 public class CommonAncestorDFS {
 
@@ -14,21 +14,21 @@ public class CommonAncestorDFS {
                77  88
        */
 
-    public TreeNode find(TreeNode treeNode, TreeNode first, TreeNode second) {
-        if (treeNode == null) {
-            return null;
-        }
-        boolean firstIsLeft = isContainsNodes(treeNode.left, first);
-        boolean secondIsLeft = isContainsNodes(treeNode.left, second);
-        if (firstIsLeft ^ secondIsLeft) return treeNode;
-        TreeNode node = (firstIsLeft) ? treeNode.left : treeNode.right;
-        return find(node, first, second);
-    }
+	public TreeNode find(TreeNode treeNode, TreeNode first, TreeNode second) {
+		if (treeNode == null) {
+			return null;
+		}
+		boolean firstIsLeft = isContainsNodes(treeNode.left, first);
+		boolean secondIsLeft = isContainsNodes(treeNode.left, second);
+		if (firstIsLeft ^ secondIsLeft) return treeNode;
+		TreeNode node = (firstIsLeft) ? treeNode.left : treeNode.right;
+		return find(node, first, second);
+	}
 
 
-    private boolean isContainsNodes(TreeNode treeNode, TreeNode node) {
-        if (node == treeNode) return true;
-        if (treeNode == null) return false;
-        return isContainsNodes(treeNode.left, node) || isContainsNodes(treeNode.right, node);
-    }
+	private boolean isContainsNodes(TreeNode treeNode, TreeNode node) {
+		if (node == treeNode) return true;
+		if (treeNode == null) return false;
+		return isContainsNodes(treeNode.left, node) || isContainsNodes(treeNode.right, node);
+	}
 }

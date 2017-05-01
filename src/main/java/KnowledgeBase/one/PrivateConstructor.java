@@ -1,11 +1,11 @@
 package KnowledgeBase.one;
 
 public class PrivateConstructor {
-    private PrivateConstructor(){
+	private PrivateConstructor() {
 
-    }
+	}
 
-    public static String test(){
-        return "test";
-    }
+	public static String test() {
+		return "test";
+	}
 }

@@ -1,20 +1,21 @@
 package dataStructures.StacksAndQueues.Seven.Lib;
 
 public abstract class AbstractAnimal {
-    public String name;
+	public String name;
 
-    public int getOrder() {
-        return order;
-    }
+	public int getOrder() {
+		return order;
+	}
 
-    public void setOrder(int order) {
-        this.order = order;
-    }
+	public void setOrder(int order) {
+		this.order = order;
+	}
 
-    int order;
-    public AbstractAnimal(String name){
-        this.name = name;
-    }
+	int order;
+
+	public AbstractAnimal(String name) {
+		this.name = name;
+	}
 
 
 }

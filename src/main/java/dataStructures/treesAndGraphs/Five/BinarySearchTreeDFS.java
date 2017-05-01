@@ -1,6 +1,6 @@
 package dataStructures.treesAndGraphs.Five;
 
-import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
+import dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
 /*
             100
@@ -11,20 +11,21 @@ import  dataStructures.treesAndGraphs.lib.tree.TreeNode;
 
     */
 public class BinarySearchTreeDFS {
-    public int previous = Integer.MIN_VALUE;
-    public boolean check(TreeNode treeNode) {
-        return inOrderDFS(treeNode);
-    }
+	public int previous = Integer.MIN_VALUE;
 
-    private boolean inOrderDFS(TreeNode treeNode) {
-        if( treeNode == null )return true;
-        if(!inOrderDFS(treeNode.left)) return false;
-        System.out.println("prev: "+previous);
-        System.out.println("data: "+treeNode.data);
-        if(previous>treeNode.data) return false;
-        previous = treeNode.data;
+	public boolean check(TreeNode treeNode) {
+		return inOrderDFS(treeNode);
+	}
 
-        if(!inOrderDFS(treeNode.right))return false;
-        return true;
-    }
+	private boolean inOrderDFS(TreeNode treeNode) {
+		if (treeNode == null) return true;
+		if (!inOrderDFS(treeNode.left)) return false;
+		System.out.println("prev: " + previous);
+		System.out.println("data: " + treeNode.data);
+		if (previous > treeNode.data) return false;
+		previous = treeNode.data;
+
+		if (!inOrderDFS(treeNode.right)) return false;
+		return true;
+	}
 }
