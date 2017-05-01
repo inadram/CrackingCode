@@ -1,6 +1,6 @@
 package dataStructures.TreesAndGraphs.Six;
 
-import  dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
+import dataStructures.TreesAndGraphs.Lib.Tree.TreeNode;
 
 public class NextNode {
    /*
